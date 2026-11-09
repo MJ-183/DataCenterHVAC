@@ -1,0 +1,693 @@
+{
+  "_note": "3층 더미 데이터센터 (다중 존 7개). 도면 datacenter_3f_dummy.dxf 와 같은 치수. 94 x 60 m, 층고 6 m, 1~3층 서측 전산실 A·B·C(각 16 MW, 랙 400개 x 40 kW), 동측은 1층 사무·전기, 2·3층 전기·CDU실. 기상·IT 모양·설비 계수는 해남 다중 존 예시와 같음. 치수·발열·랙 밀도·내부 경계 U값은 모두 가정값",
+  "site": {
+    "name": "3층 더미 데이터센터 (해남 기상, 다중 존)",
+    "latitude": 34.7,
+    "longitude": 126.43,
+    "std_meridian": 135.0,
+    "date": "2025-07-21",
+    "asos_station_id": 261,
+    "asos_solar_station_id": 165,
+    "asos_solar": "auto",
+    "weather_year": 2025
+  },
+  "weather": {
+    "dry_bulb_c": [
+      26.6,
+      26.6,
+      26.6,
+      26.6,
+      26.3,
+      26.5,
+      26.6,
+      27.5,
+      28.5,
+      29.6,
+      30.5,
+      30.5,
+      32.2,
+      26.1,
+      30.2,
+      29.4,
+      30.5,
+      29.8,
+      29.2,
+      26.8,
+      26.8,
+      26.5,
+      26.3,
+      25.8
+    ],
+    "rh_pct": [
+      93.0,
+      93.0,
+      94.0,
+      95.0,
+      96.0,
+      96.0,
+      95.0,
+      76.0,
+      71.0,
+      65.0,
+      63.0,
+      66.0,
+      59.0,
+      99.0,
+      96.0,
+      91.0,
+      69.0,
+      66.0,
+      62.0,
+      99.0,
+      99.0,
+      99.0,
+      99.0,
+      99.0
+    ],
+    "ghi_w_m2": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.4,
+      51.4,
+      166.7,
+      297.2,
+      466.7,
+      472.2,
+      541.7,
+      545.8,
+      326.4,
+      279.2,
+      240.3,
+      276.4,
+      304.2,
+      180.6,
+      75.0,
+      19.4,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "indoor": {
+    "temp_c": 24.0,
+    "rh_pct": 50.0
+  },
+  "envelope": {
+    "walls": [
+      {
+        "orientation": "N",
+        "area_m2": 1672.0,
+        "u_value": 0.35,
+        "absorptance": 0.7
+      },
+      {
+        "orientation": "E",
+        "area_m2": 1060.0,
+        "u_value": 0.35,
+        "absorptance": 0.7
+      },
+      {
+        "orientation": "S",
+        "area_m2": 1692.0,
+        "u_value": 0.35,
+        "absorptance": 0.7
+      },
+      {
+        "orientation": "W",
+        "area_m2": 1080.0,
+        "u_value": 0.35,
+        "absorptance": 0.7
+      }
+    ],
+    "roof": {
+      "area_m2": 5640.0,
+      "u_value": 0.25,
+      "absorptance": 0.7
+    },
+    "windows": [
+      {
+        "orientation": "N",
+        "area_m2": 20.0,
+        "u_value": 1.8,
+        "shgc": 0.4
+      },
+      {
+        "orientation": "E",
+        "area_m2": 20.0,
+        "u_value": 1.8,
+        "shgc": 0.4
+      }
+    ]
+  },
+  "it_load": {
+    "design_kw": 48000.0,
+    "utilization": [
+      0.81657,
+      0.85417,
+      0.84145,
+      0.85646,
+      0.82363,
+      0.86387,
+      0.81346,
+      0.80968,
+      0.89267,
+      0.8222,
+      0.82372,
+      0.81674,
+      0.83873,
+      0.86837,
+      0.85118,
+      0.85159,
+      0.82729,
+      0.85938,
+      0.83868,
+      0.83064,
+      0.8461,
+      0.83347,
+      0.88679,
+      0.84272
+    ],
+    "dataset_id": "19e90ef00fea"
+  },
+  "internal": {
+    "floor_area_m2": 16920.0,
+    "lighting_w_m2": 8.0,
+    "people": 20.0,
+    "people_kw_each": 0.13,
+    "ups_loss_ratio": 0.05
+  },
+  "ventilation": {
+    "outdoor_air_m3_h": 17000.0
+  },
+  "cooling_plant": {
+    "chw_supply_c": 12.0,
+    "chw_return_c": 18.0,
+    "cw_supply_c": 32.0,
+    "cw_return_c": 37.0,
+    "chiller_cop_rated": 6.0,
+    "design_wet_bulb_c": 27.0,
+    "cop_wb_sensitivity": 0.025,
+    "crah_fan_heat_ratio": 0.05,
+    "tower_cycles_of_concentration": 4.0,
+    "tower_drift_ratio": 0.0002,
+    "architecture": "hybrid_dlc",
+    "liquid_fraction": 0.75,
+    "immersion_capture": 0.95,
+    "tcs_supply_c": 32.0,
+    "tcs_return_c": 42.0,
+    "cdu_approach_k": 3.0,
+    "free_cooling": true,
+    "tower_approach_k": 4.0,
+    "hx_approach_k": 1.5,
+    "cop_supply_sensitivity": 0.03,
+    "cop_ref_supply_c": 12.0,
+    "chw_pump_kw_per_kw": 0.015,
+    "cw_pump_kw_per_kw": 0.012,
+    "liquid_pump_kw_per_kw": 0.02,
+    "tower_fan_kw_per_kw": 0.006
+  },
+  "cooling_layout": {
+    "racks": {
+      "rows": 10,
+      "per_row": 20,
+      "width_m": 0.6,
+      "depth_m": 1.2,
+      "aisle_m": 2.4
+    },
+    "crah": {
+      "per_side": 14,
+      "airflow_ratio": 1.0,
+      "design_margin": 1.2,
+      "fan_kw_per_m3_s": 0.35,
+      "throw_length_m": 18.0,
+      "tile_balancing": 0.3
+    },
+    "plant": {
+      "gap_east_m": 12.0,
+      "chiller_size_m": [
+        8.0,
+        3.0,
+        3.0
+      ],
+      "chiller_z_m": -6.0,
+      "tower_size_m": [
+        7.0,
+        5.0,
+        7.0
+      ],
+      "tower_z_m": 8.0,
+      "chiller_unit_kw": 3517.0,
+      "tower_unit_kw": 4100.0,
+      "cdu_unit_kw": 2000.0,
+      "standby_units": 1
+    },
+    "piping": {
+      "topology": "radial",
+      "max_velocity_m_s": 2.0,
+      "fitting_factor": 1.5,
+      "pump_efficiency": 0.65,
+      "evaporator_dp_kpa": 50.0,
+      "coil_dp_kpa": 80.0,
+      "condenser_dp_kpa": 60.0,
+      "tower_static_kpa": 50.0
+    },
+    "containment": "hot_aisle",
+    "supply_temp_c": 18.0,
+    "server_delta_t_k": 12.0,
+    "inlet_limit_c": 27.0,
+    "coil_approach_k": 6.0,
+    "coil_return_approach_k": 2.0,
+    "recirculation_scale": 1.0
+  },
+  "zones": [
+    {
+      "id": "hall_1f",
+      "name": "1층 전산실 A",
+      "floor": 0,
+      "kind": "data_hall",
+      "geometry": {
+        "ew_m": 68.0,
+        "ns_m": 60.0,
+        "height_m": 6.0,
+        "x_m": -13.0,
+        "z_m": 0.0
+      },
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "area_m2": 408.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "S",
+            "area_m2": 408.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "W",
+            "area_m2": 360.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          }
+        ],
+        "roof": {
+          "area_m2": 0.0,
+          "u_value": 0.25,
+          "absorptance": 0.7
+        },
+        "windows": []
+      },
+      "it_design_kw": 16000.0,
+      "floor_area_m2": 4080.0,
+      "people": 0.0,
+      "outdoor_air_m3_h": 5000.0,
+      "racks": {
+        "rows": 10,
+        "per_row": 40,
+        "width_m": 0.6,
+        "depth_m": 1.2,
+        "aisle_m": 2.4
+      },
+      "partitions": [
+        {
+          "zone": "hall_2f",
+          "area_m2": 4080.0,
+          "u_value": 2.0,
+          "kind": "slab"
+        },
+        {
+          "zone": "office_1f",
+          "area_m2": 144.0,
+          "u_value": 1.5,
+          "kind": "wall"
+        },
+        {
+          "zone": "elec_1f",
+          "area_m2": 216.0,
+          "u_value": 1.5,
+          "kind": "wall"
+        }
+      ]
+    },
+    {
+      "id": "hall_2f",
+      "name": "2층 전산실 B",
+      "floor": 1,
+      "kind": "data_hall",
+      "geometry": {
+        "ew_m": 68.0,
+        "ns_m": 60.0,
+        "height_m": 6.0,
+        "x_m": -13.0,
+        "z_m": 0.0
+      },
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "area_m2": 408.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "S",
+            "area_m2": 408.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "W",
+            "area_m2": 360.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          }
+        ],
+        "roof": {
+          "area_m2": 0.0,
+          "u_value": 0.25,
+          "absorptance": 0.7
+        },
+        "windows": []
+      },
+      "it_design_kw": 16000.0,
+      "floor_area_m2": 4080.0,
+      "people": 0.0,
+      "outdoor_air_m3_h": 5000.0,
+      "racks": {
+        "rows": 10,
+        "per_row": 40,
+        "width_m": 0.6,
+        "depth_m": 1.2,
+        "aisle_m": 2.4
+      },
+      "partitions": [
+        {
+          "zone": "hall_3f",
+          "area_m2": 4080.0,
+          "u_value": 2.0,
+          "kind": "slab"
+        },
+        {
+          "zone": "support_2f",
+          "area_m2": 360.0,
+          "u_value": 1.5,
+          "kind": "wall"
+        }
+      ]
+    },
+    {
+      "id": "hall_3f",
+      "name": "3층 전산실 C",
+      "floor": 2,
+      "kind": "data_hall",
+      "geometry": {
+        "ew_m": 68.0,
+        "ns_m": 60.0,
+        "height_m": 6.0,
+        "x_m": -13.0,
+        "z_m": 0.0
+      },
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "area_m2": 408.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "S",
+            "area_m2": 408.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "W",
+            "area_m2": 360.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          }
+        ],
+        "roof": {
+          "area_m2": 4080.0,
+          "u_value": 0.25,
+          "absorptance": 0.7
+        },
+        "windows": []
+      },
+      "it_design_kw": 16000.0,
+      "floor_area_m2": 4080.0,
+      "people": 0.0,
+      "outdoor_air_m3_h": 5000.0,
+      "racks": {
+        "rows": 10,
+        "per_row": 40,
+        "width_m": 0.6,
+        "depth_m": 1.2,
+        "aisle_m": 2.4
+      },
+      "partitions": [
+        {
+          "zone": "support_3f",
+          "area_m2": 360.0,
+          "u_value": 1.5,
+          "kind": "wall"
+        }
+      ]
+    },
+    {
+      "id": "office_1f",
+      "name": "1층 사무·관제(NOC)",
+      "floor": 0,
+      "kind": "office",
+      "geometry": {
+        "ew_m": 26.0,
+        "ns_m": 24.0,
+        "height_m": 6.0,
+        "x_m": 34.0,
+        "z_m": -18.0
+      },
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "area_m2": 136.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "E",
+            "area_m2": 124.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          }
+        ],
+        "roof": {
+          "area_m2": 0.0,
+          "u_value": 0.25,
+          "absorptance": 0.7
+        },
+        "windows": [
+          {
+            "orientation": "N",
+            "area_m2": 20.0,
+            "u_value": 1.8,
+            "shgc": 0.4
+          },
+          {
+            "orientation": "E",
+            "area_m2": 20.0,
+            "u_value": 1.8,
+            "shgc": 0.4
+          }
+        ]
+      },
+      "it_design_kw": 0.0,
+      "floor_area_m2": 624.0,
+      "lighting_w_m2": 12.0,
+      "people": 25.0,
+      "outdoor_air_m3_h": 5000.0,
+      "partitions": [
+        {
+          "zone": "elec_1f",
+          "area_m2": 156.0,
+          "u_value": 1.5,
+          "kind": "wall"
+        },
+        {
+          "zone": "support_2f",
+          "area_m2": 624.0,
+          "u_value": 2.0,
+          "kind": "slab"
+        }
+      ]
+    },
+    {
+      "id": "elec_1f",
+      "name": "1층 전기·UPS실",
+      "floor": 0,
+      "kind": "support",
+      "geometry": {
+        "ew_m": 26.0,
+        "ns_m": 36.0,
+        "height_m": 6.0,
+        "x_m": 34.0,
+        "z_m": 12.0
+      },
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "S",
+            "area_m2": 156.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "E",
+            "area_m2": 216.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          }
+        ],
+        "roof": {
+          "area_m2": 0.0,
+          "u_value": 0.25,
+          "absorptance": 0.7
+        },
+        "windows": []
+      },
+      "it_design_kw": 0.0,
+      "indoor": {
+        "temp_c": 30.0,
+        "rh_pct": 50.0
+      },
+      "floor_area_m2": 936.0,
+      "people": 0.0,
+      "misc_kw": 250.0,
+      "outdoor_air_m3_h": 2000.0,
+      "partitions": [
+        {
+          "zone": "support_2f",
+          "area_m2": 936.0,
+          "u_value": 2.0,
+          "kind": "slab"
+        }
+      ]
+    },
+    {
+      "id": "support_2f",
+      "name": "2층 전기실·CDU실",
+      "floor": 1,
+      "kind": "support",
+      "geometry": {
+        "ew_m": 26.0,
+        "ns_m": 60.0,
+        "height_m": 6.0,
+        "x_m": 34.0,
+        "z_m": 0.0
+      },
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "area_m2": 156.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "S",
+            "area_m2": 156.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "E",
+            "area_m2": 360.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          }
+        ],
+        "roof": {
+          "area_m2": 0.0,
+          "u_value": 0.25,
+          "absorptance": 0.7
+        },
+        "windows": []
+      },
+      "it_design_kw": 0.0,
+      "indoor": {
+        "temp_c": 30.0,
+        "rh_pct": 50.0
+      },
+      "floor_area_m2": 1560.0,
+      "people": 0.0,
+      "misc_kw": 150.0,
+      "outdoor_air_m3_h": 2000.0,
+      "partitions": [
+        {
+          "zone": "support_3f",
+          "area_m2": 1560.0,
+          "u_value": 2.0,
+          "kind": "slab"
+        }
+      ]
+    },
+    {
+      "id": "support_3f",
+      "name": "3층 전기실·CDU실",
+      "floor": 2,
+      "kind": "support",
+      "geometry": {
+        "ew_m": 26.0,
+        "ns_m": 60.0,
+        "height_m": 6.0,
+        "x_m": 34.0,
+        "z_m": 0.0
+      },
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "area_m2": 156.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "S",
+            "area_m2": 156.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "E",
+            "area_m2": 360.0,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          }
+        ],
+        "roof": {
+          "area_m2": 1560.0,
+          "u_value": 0.25,
+          "absorptance": 0.7
+        },
+        "windows": []
+      },
+      "it_design_kw": 0.0,
+      "indoor": {
+        "temp_c": 30.0,
+        "rh_pct": 50.0
+      },
+      "floor_area_m2": 1560.0,
+      "people": 0.0,
+      "misc_kw": 150.0,
+      "outdoor_air_m3_h": 2000.0,
+      "partitions": []
+    }
+  ]
+}

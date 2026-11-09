@@ -1,0 +1,57 @@
+{
+ "steps": [
+  {
+   "item": "냉각탑계",
+   "measured_mean_kw": 8.85,
+   "sim_A_mean_kw": 5.36,
+   "ratio": 1.65,
+   "coefficients": [
+    {
+     "name": "tower_fan_kw_per_kw",
+     "A": 0.006,
+     "B": 0.0099
+    }
+   ],
+   "sim_B_mean_kw": 8.84
+  },
+  {
+   "item": "펌프",
+   "measured_mean_kw": 9.29,
+   "sim_A_mean_kw": 27.66,
+   "ratio": 0.336,
+   "coefficients": [
+    {
+     "name": "liquid_pump_kw_per_kw",
+     "A": 0.02,
+     "B": 0.00672
+    },
+    {
+     "name": "cw_pump_kw_per_kw",
+     "A": 0.012,
+     "B": 0.00403
+    },
+    {
+     "name": "chw_pump_kw_per_kw",
+     "A": 0.015,
+     "B": 0.00504
+    }
+   ],
+   "sim_B_mean_kw": 9.29
+  },
+  {
+   "item": "공조 팬",
+   "measured_mean_kw": 8.04,
+   "sim_A_mean_kw": 8.86,
+   "ratio": 0.9066,
+   "coefficients": [
+    {
+     "name": "crah_fan_heat_ratio",
+     "A": 0.05,
+     "B": 0.04533
+    }
+   ],
+   "sim_B_mean_kw": 8.04
+  }
+ ],
+ "chiller_sim_A_mean_kw": 0.8
+}

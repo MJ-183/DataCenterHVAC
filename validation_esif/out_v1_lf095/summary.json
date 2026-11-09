@@ -1,0 +1,327 @@
+{
+ "facts": [
+  [
+   "cooling_plant.architecture",
+   "hybrid_dlc",
+   "NREL: 랙 직접 액체냉각, 칠러 없음"
+  ],
+  [
+   "cooling_plant.liquid_fraction",
+   0.95,
+   "NREL: 랙 발열의 95% 이상을 액체로 회수"
+  ],
+  [
+   "cooling_plant.tcs_supply_c",
+   24.0,
+   "NREL: IT 냉각수 공급 24 ℃(75 ℉, ASHRAE W2)"
+  ],
+  [
+   "cooling_plant.tcs_return_c",
+   35.0,
+   "NREL: 환수 35~40 ℃ → 하한 35 ℃"
+  ],
+  [
+   "internal.ups_loss_ratio",
+   0.0,
+   "NREL PUE 집계 5개 항목에 전기 손실 없음 → 같은 정의로 맞춤"
+  ],
+  [
+   "internal.floor_area_m2",
+   929.0,
+   "NREL: 전산실 10,000 ft²"
+  ],
+  [
+   "internal.lighting_w_m2",
+   4.0,
+   "실측 조명·콘센트 평균 3.7 kW → 929 m² 로 환산 (비교 대상 아닌 입력)"
+  ],
+  [
+   "internal.people",
+   0.0,
+   "가정: 무인 전산실"
+  ],
+  [
+   "it_load",
+   "measured",
+   "실측 it_power_kw 시간값을 그대로 입력"
+  ]
+ ],
+ "assumed": [
+  [
+   "envelope",
+   "내부 공간",
+   "가정: 건물 내부 전산실 → 외피 면적 최소(벽 각 50 m², 지붕 0, 창 0)"
+  ],
+  [
+   "ventilation.outdoor_air_m3_h",
+   1000.0,
+   "가정: 외기 공급기 풍량 미공개 → 약 1 m³/h·m²"
+  ],
+  [
+   "cooling_plant.chw_supply_c / return_c",
+   "21 / 27",
+   "가정: 팬월 코일도 냉각탑수 계통(칠러 없음)에서 공급"
+  ],
+  [
+   "나머지 계수",
+   "프로젝트 기본값",
+   "펌프·팬 kW/kW, 냉각탑·열교환기·CDU 접근온도, COC 4 등"
+  ]
+ ],
+ "weather": "tmy3",
+ "runs": {
+  "A_default_cal": {
+   "period": [
+    "2016-09-01",
+    "2017-08-31"
+   ],
+   "weather_days": {
+    "tmy3": 365
+   },
+   "hours": 8682,
+   "it_mean_kw": 890.5,
+   "pue": {
+    "measured": 1.0336,
+    "sim": 1.0447,
+    "diff": 0.0111
+   },
+   "chiller_hours_sim": 521,
+   "chiller_hours_measured": 0,
+   "tower_vs_cooling": {
+    "measured_mean_kw": 8.85,
+    "sim_mean_kw": 5.32,
+    "ratio_sim_over_meas": 0.601,
+    "nmbe_pct": 39.9,
+    "cv_rmse_pct": 60.0,
+    "corr_hourly": 0.136,
+    "corr_with_it": {
+     "measured": 0.15,
+     "sim": 0.996
+    },
+    "corr_with_wet_bulb": {
+     "measured": -0.193,
+     "sim": -0.017
+    }
+   },
+   "pump": {
+    "measured_mean_kw": 9.29,
+    "sim_mean_kw": 28.17,
+    "ratio_sim_over_meas": 3.032,
+    "nmbe_pct": -203.2,
+    "cv_rmse_pct": 206.7,
+    "corr_hourly": 0.173,
+    "corr_with_it": {
+     "measured": 0.143,
+     "sim": 0.998
+    },
+    "corr_with_wet_bulb": {
+     "measured": 0.472,
+     "sim": -0.036
+    }
+   },
+   "fan_vs_hvac": {
+    "measured_mean_kw": 8.04,
+    "sim_mean_kw": 1.92,
+    "ratio_sim_over_meas": 0.239,
+    "nmbe_pct": 76.1,
+    "cv_rmse_pct": 77.8,
+    "corr_hourly": 0.301,
+    "corr_with_it": {
+     "measured": 0.075,
+     "sim": 0.558
+    },
+    "corr_with_wet_bulb": {
+     "measured": 0.329,
+     "sim": 0.759
+    }
+   },
+   "mech_total": {
+    "measured_mean_kw": 26.18,
+    "sim_mean_kw": 36.11,
+    "ratio_sim_over_meas": 1.379,
+    "nmbe_pct": -38.0,
+    "cv_rmse_pct": 44.5,
+    "corr_hourly": 0.258,
+    "corr_with_it": {
+     "measured": 0.238,
+     "sim": 0.687
+    },
+    "corr_with_wet_bulb": {
+     "measured": 0.206,
+     "sim": 0.246
+    }
+   },
+   "sim_wue_l_per_kwh": 1.967
+  },
+  "B_calibrated_cal": {
+   "period": [
+    "2016-09-01",
+    "2017-08-31"
+   ],
+   "coefficients": {
+    "tower_fan_kw_per_kw": 0.00998,
+    "chw_pump_kw_per_kw": 0.00495,
+    "cw_pump_kw_per_kw": 0.00396,
+    "liquid_pump_kw_per_kw": 0.0066,
+    "crah_fan_heat_ratio": 0.20949
+   },
+   "hours": 8682,
+   "it_mean_kw": 890.5,
+   "pue": {
+    "measured": 1.0336,
+    "sim": 1.0345,
+    "diff": 0.0009
+   },
+   "chiller_hours_sim": 521,
+   "chiller_hours_measured": 0,
+   "tower_vs_cooling": {
+    "measured_mean_kw": 8.85,
+    "sim_mean_kw": 8.91,
+    "ratio_sim_over_meas": 1.007,
+    "nmbe_pct": -0.7,
+    "cv_rmse_pct": 45.0,
+    "corr_hourly": 0.135,
+    "corr_with_it": {
+     "measured": 0.15,
+     "sim": 0.995
+    },
+    "corr_with_wet_bulb": {
+     "measured": -0.193,
+     "sim": -0.008
+    }
+   },
+   "pump": {
+    "measured_mean_kw": 9.29,
+    "sim_mean_kw": 9.35,
+    "ratio_sim_over_meas": 1.006,
+    "nmbe_pct": -0.6,
+    "cv_rmse_pct": 28.9,
+    "corr_hourly": 0.177,
+    "corr_with_it": {
+     "measured": 0.143,
+     "sim": 0.997
+    },
+    "corr_with_wet_bulb": {
+     "measured": 0.472,
+     "sim": -0.027
+    }
+   },
+   "fan_vs_hvac": {
+    "measured_mean_kw": 8.04,
+    "sim_mean_kw": 8.04,
+    "ratio_sim_over_meas": 1.0,
+    "nmbe_pct": -0.0,
+    "cv_rmse_pct": 20.6,
+    "corr_hourly": 0.302,
+    "corr_with_it": {
+     "measured": 0.075,
+     "sim": 0.559
+    },
+    "corr_with_wet_bulb": {
+     "measured": 0.329,
+     "sim": 0.762
+    }
+   },
+   "mech_total": {
+    "measured_mean_kw": 26.18,
+    "sim_mean_kw": 27.01,
+    "ratio_sim_over_meas": 1.032,
+    "nmbe_pct": -3.2,
+    "cv_rmse_pct": 23.0,
+    "corr_hourly": 0.261,
+    "corr_with_it": {
+     "measured": 0.238,
+     "sim": 0.534
+    },
+    "corr_with_wet_bulb": {
+     "measured": 0.206,
+     "sim": 0.434
+    }
+   },
+   "sim_wue_l_per_kwh": 1.981
+  },
+  "C_calibrated_test2019": {
+   "period": [
+    "2019-01-01",
+    "2019-12-31"
+   ],
+   "weather_days": {
+    "tmy3": 365
+   },
+   "hours": 8633,
+   "it_mean_kw": 1186.7,
+   "pue": {
+    "measured": 1.0297,
+    "sim": 1.0338,
+    "diff": 0.0041
+   },
+   "chiller_hours_sim": 519,
+   "chiller_hours_measured": 0,
+   "tower_vs_cooling": {
+    "measured_mean_kw": 10.62,
+    "sim_mean_kw": 11.9,
+    "ratio_sim_over_meas": 1.121,
+    "nmbe_pct": -12.1,
+    "cv_rmse_pct": 73.9,
+    "corr_hourly": 0.135,
+    "corr_with_it": {
+     "measured": 0.137,
+     "sim": 0.999
+    },
+    "corr_with_wet_bulb": {
+     "measured": -0.113,
+     "sim": 0.024
+    }
+   },
+   "pump": {
+    "measured_mean_kw": 11.35,
+    "sim_mean_kw": 12.48,
+    "ratio_sim_over_meas": 1.1,
+    "nmbe_pct": -10.0,
+    "cv_rmse_pct": 49.0,
+    "corr_hourly": 0.26,
+    "corr_with_it": {
+     "measured": 0.248,
+     "sim": 0.999
+    },
+    "corr_with_wet_bulb": {
+     "measured": 0.277,
+     "sim": 0.013
+    }
+   },
+   "fan_vs_hvac": {
+    "measured_mean_kw": 9.45,
+    "sim_mean_kw": 11.15,
+    "ratio_sim_over_meas": 1.18,
+    "nmbe_pct": -18.0,
+    "cv_rmse_pct": 34.6,
+    "corr_hourly": 0.074,
+    "corr_with_it": {
+     "measured": 0.268,
+     "sim": 0.84
+    },
+    "corr_with_wet_bulb": {
+     "measured": -0.294,
+     "sim": 0.519
+    }
+   },
+   "mech_total": {
+    "measured_mean_kw": 31.42,
+    "sim_mean_kw": 36.41,
+    "ratio_sim_over_meas": 1.159,
+    "nmbe_pct": -15.9,
+    "cv_rmse_pct": 38.6,
+    "corr_hourly": 0.29,
+    "corr_with_it": {
+     "measured": 0.282,
+     "sim": 0.726
+    },
+    "corr_with_wet_bulb": {
+     "measured": 0.012,
+     "sim": 0.353
+    }
+   },
+   "sim_wue_l_per_kwh": 1.985
+  }
+ }
+}

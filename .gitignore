@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+node_modules/
+dist/
+backend/result.json
+backend/.env
+backend/data/scenarios/
+backend/data/real_cache/
+
+# test outputs
+backend/p.out
+backend/p2.out

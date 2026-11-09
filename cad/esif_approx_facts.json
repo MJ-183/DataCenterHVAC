@@ -1,0 +1,122 @@
+{
+ "facts": {
+  "machine_room_m2": {
+   "value": 929.0,
+   "source": "약 930 m2 (10,000 ft2), 기둥 없는 단일 공간 — NREL fy17osti 66690, fy12osti 55423"
+  },
+  "ceiling_m": {
+   "value": 3.3528000000000002,
+   "source": "천장 높이 11 ft — NREL fy12osti 55423"
+  },
+  "stack": {
+   "value": "최상층 전산실 / 가운데 층 펌프·전력 분배 / 최하층 펌프실(중앙 냉난방 연결)",
+   "source": "NREL fy12osti 55423"
+  },
+  "mech_below": {
+   "value": "ERW→건물 난방수 판형 열교환기는 전산실 아래 기계실",
+   "source": "NREL fy17osti 66690"
+  },
+  "mech_4f": {
+   "value": "열 재활용 후 남은 ERW 는 4층 기계실로 감 (열사이펀·냉각탑 열교환기 방향)",
+   "source": "NREL 데이터센터 냉각 시스템 페이지"
+  },
+  "return_chases": {
+   "value": "천장 플레넘의 더운 공기가 북·남측 환기 통로(chase)로 내려가 팬월 공조기로",
+   "source": "NREL fy12osti 55423"
+  },
+  "hot_aisle": {
+   "value": "열복도 완전 차폐, 일반 CRAH 없음, 팬월 급기 20.6~23.3 ℃",
+   "source": "NREL fy17osti 66690"
+  },
+  "towers": {
+   "value": "옥외 플랫폼에 냉각탑 7기: 데이터센터용 4기(부하별 단계 운전, 보통 2기) + 사무·실험동용 3기",
+   "source": "NREL fy17osti 66690"
+  },
+  "sumps": {
+   "value": "냉각탑마다 원격 실내 집수조 (기저 히터 불필요)",
+   "source": "NREL fy17osti 66690"
+  },
+  "tsc": {
+   "value": "열사이펀 건식냉각기 1기, ESIF 옥상, 향후 냉각탑용 플랫폼 위, 2016-08 가동",
+   "source": "NREL fy17osti 68168, 66690"
+  },
+  "pipes": {
+   "value": "ERW 환수관 350 mm(14 in), 열사이펀 공급·환수 150 mm(6 in) 신설",
+   "source": "NREL fy17osti 66690"
+  },
+  "it_2016": {
+   "value": "가동 시 IT 0.91 MW = 액체냉각 HPC 0.76 MW + 공랭 0.15 MW",
+   "source": "NREL fy17osti 66690"
+  },
+  "cdu": {
+   "value": "Peregrine CDU 10대, 노드 랙 사이 별도 IT 랙에 설치",
+   "source": "NREL fy17osti 66690"
+  },
+  "peregrine_nodes": {
+   "value": 2592,
+   "source": "Peregrine 서버 노드 2,592 — NREL fy17osti 66690"
+  },
+  "apollo_rack": {
+   "value": 144,
+   "source": "HP Apollo 8000 랙당 서버 144 — HPCwire 2014-06-10"
+  },
+  "rack_kw": {
+   "value": "전산 랙 60~80 kW(액체), 공랭 랙 1~5 kW, 480 VAC 직접 공급",
+   "source": "NREL fy19osti 74464, Sustainable Data Centers"
+  },
+  "capacity": {
+   "value": "설계 최대 10 MW, 2.5 MW 단위 증설, 배관은 10 MW 기준",
+   "source": "NREL fy17osti 66690"
+  },
+  "office_depth_m": {
+   "value": 18.288,
+   "source": "사무동 깊이 60 ft — EERE Energy Efficiency in Design-Build Course"
+  },
+  "height_3st_m": {
+   "value": 13.716000000000001,
+   "source": "45 ft = 3층 — 같은 자료"
+  },
+  "building_m2": {
+   "value": 16954.8048,
+   "source": "건물 연면적 182,500 ft2, 사무동·데이터센터·고천장 실험동 3개 매스 — NREL, SmithGroup"
+  },
+  "elevation_m": {
+   "value": 1770.0,
+   "source": "해발 약 1,770 m (5,800 ft) — NREL fy17osti 66690"
+  }
+ },
+ "assumed": {
+  "room_shape": "전산실 30.5 x 30.5 m 정사각형 (100 x 100 ft, 면적 사실에 맞춘 가정)",
+  "chase_w": "북·남 환기 통로 폭 각 1.5 m → 블록 30.5 x 33.5 m",
+  "floor_h": "층고 F1 4.6 / F2 4.6 / F3 4.9 (천장 3.35 + 플레넘 1.25 + 슬래브 0.3) / F4 4.6 m",
+  "racks": "Peregrine 노드 랙 18 = 2,592 ÷ 144 (전부 Apollo 랙이라 가정), 랙당 42.2 kW = 0.76 MW ÷ 18 (2016 가동값)",
+  "air_racks": "공랭 랙 50 x 3 kW = 0.15 MW (1~5 kW 범위의 중간값)",
+  "rows": "랙 열 동서 방향, 액체 2열 x 14(노드 9 + CDU 5), 공랭 2열 x 25, 열복도 차폐, 증설 자리 2열 x 14",
+  "fan_walls": "팬월 위치는 공개되지 않음 → F2 의 북·남 환기 통로 아래, 각 24 m 길이로 가정",
+  "mech": "F2 판형 열교환기 1, ERW 펌프 2+1, 전력 분배반 6 / F1 난방수 펌프 2 / F4 냉각탑 열교환기 1, 집수조 4 — 대수·크기 가정",
+  "tower_size": "냉각탑 1기 3.7 x 3.7 x 4.0 m (초기 600 RT ÷ 4기 = 150 RT 급 가정), 플랫폼은 데이터센터 블록 옥상(가정)",
+  "tsc_size": "열사이펀 12 x 2.4 x 2.6 m (크기 미공개, 가정)",
+  "massing": "사무동 북측(동서 110 m x 깊이 18.3 m, 3층 13.7 m), 실험동 남측(110 x 45 m, 높이 12 m) — 배치·길이 가정"
+ },
+ "geometry": {
+  "block_ew_m": 30.5,
+  "block_ns_m": 33.5,
+  "room_ew_m": 30.5,
+  "room_ns_m": 30.5,
+  "floor_heights_m": [
+   4.6,
+   4.6,
+   4.9,
+   4.6
+  ],
+  "racks": {
+   "node": 18,
+   "cdu": 10,
+   "air": 50,
+   "slot": 28
+  },
+  "node_kw": 42.2,
+  "air_kw": 3.0,
+  "it_design_kw": 909.6
+ }
+}

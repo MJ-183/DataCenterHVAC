@@ -1,0 +1,98 @@
+{
+  "id": "esif",
+  "label": "NREL ESIF HPC 데이터센터 (Golden, CO)",
+  "description": "랙 직접 액체냉각(95% 이상), 칠러 없음, 냉각탑 + 열사이펀 + 건물 난방 재활용. 시간 평균 IT·냉각탑계·펌프·공조 팬·조명·PUE 실측 (NREL 원본 1~5분 값 → 시간 평균).",
+  "data": {"csv": "data_esif/esif_hourly_mst.csv", "timestamp": "timestamp_mst", "timezone": "MST (UTC−7, 일광절약시간 없음)"},
+  "mapping": {
+    "timestamp": "timestamp_mst",
+    "it": "it_power_kw",
+    "items": {"cooling_kw": ["tower_fan"], "pump_kw": ["chw_pump", "cw_pump", "liquid_pump"], "hvac_kw": ["crah_fan"]},
+    "labels": {"cooling_kw": "냉각탑계", "pump_kw": "펌프", "hvac_kw": "공조 팬"},
+    "definitions": {
+      "cooling_kw": "냉각탑·건식냉각기 팬 + 동결방지 열선 + 필터 펌프 2.67 kW 고정 ↔ 시뮬 tower_fan",
+      "pump_kw": "에너지회수수(ERW)·냉각탑수 루프 펌프 + 팬월 부스터 펌프 ↔ 시뮬 chw_pump + cw_pump + liquid_pump",
+      "hvac_kw": "팬월 + 전기실 팬코일 + 외기 공급기 ↔ 시뮬 crah_fan",
+      "plug_and_light_kw": "조명·콘센트 (시뮬은 조명 입력값, 비교 대상 아님)"
+    },
+    "lighting": "plug_and_light_kw",
+    "pue_column": "pue",
+    "pue_terms": ["it", "cooling_kw", "pump_kw", "hvac_kw", "plug_and_light_kw"],
+    "ups_loss": 0.0,
+    "dry_bulb": null,
+    "rh": null
+  },
+  "periods": {"cal": ["2016-09-01", "2017-08-31"], "test": ["2019-01-01", "2019-12-31"]},
+  "period_notes": {"cal": "NREL 공개 1차년도와 같은 기간 (PUE 1.034, WUE 0.7)", "test": "보정 계수 검증용 (IT 부하 약 1.3배)"},
+  "weather": {
+    "epw": "validation_esif/golden_tmy3.epw",
+    "epw_label": "Golden, CO TMY3 표준기상년 (EnergyPlus 저장소, USA_CO_Golden-NREL.724666_TMY3) — 그해 실제 기상이 아님",
+    "site_csv": "data_esif/esif_outside_hourly_mst.csv",
+    "site_timestamp": "timestamp_mst",
+    "site_temp": "outside_air_temp",
+    "site_temp_unit": "F",
+    "site_rh": "outside_air_humidity",
+    "site_label": "ESIF 현장 외기 관측 (NREL ESIF DC Outside Weather Station Timeseries) — 온·습도만, 일사는 TMY3"
+  },
+  "facility": {"chiller_count": 0, "chiller_note": "실제 ESIF 는 칠러 없음 → 실측 칠러 시간 0 h 와 비교"},
+  "scenario": {
+    "base": "scenario_sample.json",
+    "drop": ["cooling_layout", "provenance"],
+    "inputs": [
+      {"path": "site.name", "label": "사이트", "value": "NREL ESIF HPC DC (Golden, CO)", "basis": "fact", "ref": "NREL HPC Facility PUE Data"},
+      {"path": "site.latitude", "label": "위도", "value": 39.74, "basis": "fact", "ref": "TMY3 724666 LOCATION"},
+      {"path": "site.longitude", "label": "경도", "value": -105.17, "basis": "fact", "ref": "NREL ESIF (Golden, CO)"},
+      {"path": "site.std_meridian", "label": "표준시 자오선", "value": -105.0, "basis": "fact", "ref": "MST (UTC−7)"},
+      {"path": "site.elevation_m", "label": "해발 고도 [m]", "value": 1829.0, "basis": "fact", "ref": "TMY3 724666 LOCATION",
+       "note": "엔진은 쓰지 않음 — 칠러 민감도(고도 습구) 분석에만 사용"},
+      {"path": "cooling_plant.architecture", "label": "냉각 방식", "value": "hybrid_dlc", "basis": "fact",
+       "ref": "NREL/TP fy19osti 74464", "note": "랙 직접 액체냉각, 칠러 없음"},
+      {"path": "cooling_plant.liquid_fraction", "label": "액체 회수 비율", "value": 0.95, "basis": "fact",
+       "ref": "NREL/TP fy19osti 74464", "note": "랙 발열의 95% 이상을 액체로 회수"},
+      {"path": "cooling_plant.tcs_supply_c", "label": "IT 냉각수 공급 [℃]", "value": 24.0, "basis": "fact",
+       "ref": "NREL/TP fy19osti 74464", "note": "24 ℃(75 ℉, ASHRAE W2)"},
+      {"path": "cooling_plant.tcs_return_c", "label": "IT 냉각수 환수 [℃]", "value": 35.0, "basis": "fact",
+       "ref": "NREL/TP fy19osti 74464", "note": "환수 35~40 ℃ → 하한 35 ℃"},
+      {"path": "cooling_plant.free_cooling", "label": "프리쿨링", "value": true, "basis": "fact",
+       "ref": "NREL fy17osti 68659", "note": "냉각탑 + 열사이펀 건식냉각기로 직접 방열"},
+      {"path": "internal.ups_loss_ratio", "label": "UPS 손실 비율", "value": 0.0, "basis": "fact",
+       "ref": "NREL, Measuring Efficiency: PUE", "note": "NREL PUE 집계 5개 항목에 전기 손실 없음 → 같은 정의로 맞춤"},
+      {"path": "internal.floor_area_m2", "label": "전산실 바닥 [m²]", "value": 929.0, "basis": "fact",
+       "ref": "NREL/TP fy19osti 74464", "note": "10,000 ft²"},
+      {"path": "internal.lighting_w_m2", "label": "조명 [W/m²]", "value": 4.0, "basis": "fact",
+       "ref": "실측 plug_and_light_kw 평균", "note": "실측 조명·콘센트 평균 3.7 kW → 929 m² 로 환산 (비교 대상 아닌 입력)"},
+      {"path": "internal.people", "label": "재실 인원", "value": 0.0, "basis": "assumed", "note": "무인 전산실"},
+      {"path": "envelope", "label": "외피", "basis": "assumed", "note": "건물 내부 전산실 → 외피 면적 최소(벽 각 50 m², 지붕 0, 창 0)",
+       "value": {"walls": [{"orientation": "N", "area_m2": 50.0, "u_value": 0.35, "absorptance": 0.7},
+                           {"orientation": "E", "area_m2": 50.0, "u_value": 0.35, "absorptance": 0.7},
+                           {"orientation": "S", "area_m2": 50.0, "u_value": 0.35, "absorptance": 0.7},
+                           {"orientation": "W", "area_m2": 50.0, "u_value": 0.35, "absorptance": 0.7}],
+                 "roof": {"area_m2": 0.0, "u_value": 0.25, "absorptance": 0.7}, "windows": []}},
+      {"path": "ventilation.outdoor_air_m3_h", "label": "외기량 [m³/h]", "value": 1000.0, "basis": "assumed",
+       "note": "외기 공급기 풍량 미공개 → 약 1 m³/h·m²"},
+      {"path": "cooling_plant.chw_supply_c", "label": "공기측 코일 공급 [℃]", "value": 21.0, "basis": "assumed",
+       "note": "팬월 코일도 냉각탑수 계통(칠러 없음)에서 공급된다고 가정"},
+      {"path": "cooling_plant.chw_return_c", "label": "공기측 코일 환수 [℃]", "value": 27.0, "basis": "assumed",
+       "note": "팬월 코일도 냉각탑수 계통(칠러 없음)에서 공급된다고 가정"}
+    ],
+    "notes": [
+      {"label": "IT 부하", "value": "실측 it_power_kw 시간값", "basis": "fact", "ref": "NREL HPC Facility PUE Data",
+       "note": "하루 안 결측은 선형 보간, 하루 전체 결측이면 기간 평균"},
+      {"label": "나머지 계수", "value": "프로젝트 기본값", "basis": "assumed",
+       "note": "펌프·팬 kW/kW, 냉각탑·열교환기·CDU 접근온도, COC 4 등 — 공개 자료 없음"}
+    ]
+  },
+  "reference": {
+    "wue_first_year_l_per_kwh": 0.7,
+    "wue_cooling_towers_alone_l_per_kwh": 1.42,
+    "heat_rejection_share": {"cooling_towers": 0.47, "thermosyphon": 0.42, "building_heat": 0.11},
+    "pue_first_year": 1.034,
+    "it_mean_first_year_kw": 888
+  },
+  "sources": [
+    {"label": "NREL HPC Facility PUE Data (data.gov / data.nlr.gov submission 300), CC BY 4.0"},
+    {"label": "NREL, Measuring Efficiency: PUE (항목 정의)"},
+    {"label": "NREL/TP fy19osti 74464 (설계·1차년도 성능)"},
+    {"label": "NREL fy17osti 68659 (열사이펀 하이브리드)"},
+    {"label": "EnergyPlus weather: USA_CO_Golden-NREL.724666_TMY3.epw"}
+  ]
+}

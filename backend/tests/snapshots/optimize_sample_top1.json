@@ -1,0 +1,74 @@
+{
+ "baseline": {
+  "params": {
+   "containment": "open",
+   "crah_per_side": 5,
+   "airflow_ratio": 1.0,
+   "tile_balancing": 0.3,
+   "supply_temp_c": 18.0,
+   "chw_supply_c": 12.0,
+   "chw_return_c": 18.0,
+   "topology": "radial"
+  },
+  "max_inlet_c": 21.79,
+  "racks_over_limit": 0,
+  "crah_return_c": 26.5,
+  "shi": 0.13,
+  "peak_kw": {
+   "chiller": 307.8,
+   "crah_fan": 58.0,
+   "chw_pump": 23.04,
+   "cw_pump": 18.17,
+   "liquid": 0.0,
+   "total": 407.0
+  },
+  "cop_peak": 6.38,
+  "daily_kwh": {
+   "chiller": 6725.8,
+   "crah_fan": 1392.0,
+   "chw_pump": 430.1,
+   "cw_pump": 365.3,
+   "liquid": 0.0,
+   "total": 8912.9
+  },
+  "chw_head_kpa": 204.2,
+  "feasible": true,
+  "violations": []
+ },
+ "top1": {
+  "params": {
+   "containment": "hot_aisle",
+   "crah_per_side": 5,
+   "airflow_ratio": 0.65,
+   "tile_balancing": 1.0,
+   "supply_temp_c": 24.5,
+   "chw_supply_c": 18.5,
+   "chw_return_c": 28.5,
+   "topology": "dual"
+  },
+  "max_inlet_c": 26.71,
+  "racks_over_limit": 0,
+  "crah_return_c": 37.58,
+  "shi": 0.156,
+  "peak_kw": {
+   "chiller": 250.7,
+   "crah_fan": 15.9,
+   "chw_pump": 13.13,
+   "cw_pump": 16.42,
+   "liquid": 0.0,
+   "total": 296.2
+  },
+  "cop_peak": 7.62,
+  "daily_kwh": {
+   "chiller": 5471.6,
+   "crah_fan": 381.6,
+   "chw_pump": 243.8,
+   "cw_pump": 330.7,
+   "liquid": 0.0,
+   "total": 6427.8
+  },
+  "chw_head_kpa": 207.2,
+  "feasible": true,
+  "violations": []
+ }
+}

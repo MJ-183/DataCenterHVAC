@@ -1,0 +1,13 @@
+{
+ "site_pressure_kpa": 81.2,
+ "wet_bulb_bias_when_t_gt_20c_mean_k": 0.96,
+ "max_wet_bulb_sea_c": 20.8,
+ "max_wet_bulb_alt_c": 19.52,
+ "tmy3_chiller_needed_hours": {
+  "기본 (해수면 습구, 냉각탑 4 K + 열교환기 1.5 K + CDU 3 K)": 521,
+  "고도 1,829 m 습구로 보정": 304,
+  "CDU 접근 3 → 1.5 K": 175,
+  "고도 보정 + CDU 1.5 K": 70,
+  "고도 보정 + CDU 1.5 K + 냉각탑 접근 3 K": 15
+ }
+}

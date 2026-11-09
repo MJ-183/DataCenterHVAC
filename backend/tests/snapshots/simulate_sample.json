@@ -1,0 +1,1942 @@
+{
+ "site": "Sample DC (Seoul)",
+ "date": "2026-07-15",
+ "step_min": 60,
+ "architecture": "air_chw",
+ "hourly": [
+  {
+   "hour": 0,
+   "minute": 0,
+   "t_h": 0.0,
+   "sun": {
+    "altitude_deg": -30.25,
+    "azimuth_deg": -169.84
+   },
+   "surface_solar_w_m2": {
+    "S": 0.0,
+    "W": 0.0,
+    "N": 0.0,
+    "E": 0.0,
+    "roof": 0
+   },
+   "weather": {
+    "dry_bulb_c": 26.5,
+    "rh_pct": 82,
+    "wet_bulb_c": 24.05,
+    "ghi_w_m2": 0
+   },
+   "load_kw": {
+    "it": 1440.0,
+    "ups_loss": 72.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 1.93,
+    "roof_conduction": 1.88,
+    "window_conduction": 0.32,
+    "window_solar": 0.0,
+    "ventilation": 24.54,
+    "crah_fan": 78.3,
+    "total_cooling": 1644.3
+   },
+   "chilled_water": {
+    "flow_m3_h": 235.7,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.44,
+    "power_kw": 255.2
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 1899.5,
+    "flow_m3_h": 326.7,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 2.814,
+    "drift": 0.0653,
+    "blowdown": 0.873,
+    "total": 3.752
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 28.05,
+    "free_cooling_water_c": 29.55,
+    "air_loop": {
+     "load_kw": 1644.3,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1644.3,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 255.2,
+     "crah_fan": 78.3,
+     "chw_pump": 24.66,
+     "cw_pump": 22.79,
+     "liquid_pump": 0.0,
+     "tower_fan": 11.4,
+     "cooling_total": 392.4,
+     "facility": 1928.4
+    },
+    "pue": 1.339,
+    "wue_l_per_kwh": 2.606
+   }
+  },
+  {
+   "hour": 1,
+   "minute": 0,
+   "t_h": 1.0,
+   "sun": {
+    "altitude_deg": -30.68,
+    "azimuth_deg": -173.97
+   },
+   "surface_solar_w_m2": {
+    "S": 0.0,
+    "W": 0.0,
+    "N": 0.0,
+    "E": 0.0,
+    "roof": 0
+   },
+   "weather": {
+    "dry_bulb_c": 26.0,
+    "rh_pct": 84,
+    "wet_bulb_c": 23.85,
+    "ghi_w_m2": 0
+   },
+   "load_kw": {
+    "it": 1420.0,
+    "ups_loss": 71.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 1.54,
+    "roof_conduction": 1.5,
+    "window_conduction": 0.25,
+    "window_solar": 0.0,
+    "ventilation": 23.76,
+    "crah_fan": 77.2,
+    "total_cooling": 1620.5
+   },
+   "chilled_water": {
+    "flow_m3_h": 232.3,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.47,
+    "power_kw": 250.4
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 1870.9,
+    "flow_m3_h": 321.8,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 2.772,
+    "drift": 0.0644,
+    "blowdown": 0.86,
+    "total": 3.696
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 27.85,
+    "free_cooling_water_c": 29.35,
+    "air_loop": {
+     "load_kw": 1620.5,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1620.5,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 250.4,
+     "crah_fan": 77.2,
+     "chw_pump": 24.31,
+     "cw_pump": 22.45,
+     "liquid_pump": 0.0,
+     "tower_fan": 11.23,
+     "cooling_total": 385.5,
+     "facility": 1900.5
+    },
+    "pue": 1.338,
+    "wue_l_per_kwh": 2.603
+   }
+  },
+  {
+   "hour": 2,
+   "minute": 0,
+   "t_h": 2.0,
+   "sun": {
+    "altitude_deg": -27.82,
+    "azimuth_deg": -158.3
+   },
+   "surface_solar_w_m2": {
+    "S": 0.0,
+    "W": 0.0,
+    "N": 0.0,
+    "E": 0.0,
+    "roof": 0
+   },
+   "weather": {
+    "dry_bulb_c": 25.6,
+    "rh_pct": 85,
+    "wet_bulb_c": 23.6,
+    "ghi_w_m2": 0
+   },
+   "load_kw": {
+    "it": 1400.0,
+    "ups_loss": 70.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 1.23,
+    "roof_conduction": 1.2,
+    "window_conduction": 0.2,
+    "window_solar": 0.0,
+    "ventilation": 22.8,
+    "crah_fan": 76.0,
+    "total_cooling": 1596.8
+   },
+   "chilled_water": {
+    "flow_m3_h": 228.9,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.51,
+    "power_kw": 245.3
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 1842.0,
+    "flow_m3_h": 316.8,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 2.729,
+    "drift": 0.0634,
+    "blowdown": 0.846,
+    "total": 3.639
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 27.6,
+    "free_cooling_water_c": 29.1,
+    "air_loop": {
+     "load_kw": 1596.8,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1596.8,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 245.3,
+     "crah_fan": 76.0,
+     "chw_pump": 23.95,
+     "cw_pump": 22.1,
+     "liquid_pump": 0.0,
+     "tower_fan": 11.05,
+     "cooling_total": 378.4,
+     "facility": 1872.4
+    },
+    "pue": 1.337,
+    "wue_l_per_kwh": 2.599
+   }
+  },
+  {
+   "hour": 3,
+   "minute": 0,
+   "t_h": 3.0,
+   "sun": {
+    "altitude_deg": -22.09,
+    "azimuth_deg": -144.26
+   },
+   "surface_solar_w_m2": {
+    "S": 0.0,
+    "W": 0.0,
+    "N": 0.0,
+    "E": 0.0,
+    "roof": 0
+   },
+   "weather": {
+    "dry_bulb_c": 25.3,
+    "rh_pct": 86,
+    "wet_bulb_c": 23.44,
+    "ghi_w_m2": 0
+   },
+   "load_kw": {
+    "it": 1400.0,
+    "ups_loss": 70.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 1.0,
+    "roof_conduction": 0.98,
+    "window_conduction": 0.16,
+    "window_solar": 0.0,
+    "ventilation": 22.21,
+    "crah_fan": 76.0,
+    "total_cooling": 1595.6
+   },
+   "chilled_water": {
+    "flow_m3_h": 228.7,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.53,
+    "power_kw": 244.2
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 1839.9,
+    "flow_m3_h": 316.5,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 2.726,
+    "drift": 0.0633,
+    "blowdown": 0.845,
+    "total": 3.634
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 27.44,
+    "free_cooling_water_c": 28.94,
+    "air_loop": {
+     "load_kw": 1595.6,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1595.6,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 244.2,
+     "crah_fan": 76.0,
+     "chw_pump": 23.93,
+     "cw_pump": 22.08,
+     "liquid_pump": 0.0,
+     "tower_fan": 11.04,
+     "cooling_total": 377.3,
+     "facility": 1871.3
+    },
+    "pue": 1.337,
+    "wue_l_per_kwh": 2.596
+   }
+  },
+  {
+   "hour": 4,
+   "minute": 0,
+   "t_h": 4.0,
+   "sun": {
+    "altitude_deg": -14.16,
+    "azimuth_deg": -132.17
+   },
+   "surface_solar_w_m2": {
+    "S": 0.0,
+    "W": 0.0,
+    "N": 0.0,
+    "E": 0.0,
+    "roof": 0
+   },
+   "weather": {
+    "dry_bulb_c": 25.1,
+    "rh_pct": 87,
+    "wet_bulb_c": 23.38,
+    "ghi_w_m2": 0
+   },
+   "load_kw": {
+    "it": 1400.0,
+    "ups_loss": 70.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 0.85,
+    "roof_conduction": 0.83,
+    "window_conduction": 0.14,
+    "window_solar": 0.0,
+    "ventilation": 21.98,
+    "crah_fan": 76.0,
+    "total_cooling": 1595.0
+   },
+   "chilled_water": {
+    "flow_m3_h": 228.6,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.54,
+    "power_kw": 243.8
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 1838.9,
+    "flow_m3_h": 316.3,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 2.724,
+    "drift": 0.0633,
+    "blowdown": 0.845,
+    "total": 3.632
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 27.38,
+    "free_cooling_water_c": 28.88,
+    "air_loop": {
+     "load_kw": 1595.0,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1595.0,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 243.8,
+     "crah_fan": 76.0,
+     "chw_pump": 23.93,
+     "cw_pump": 22.07,
+     "liquid_pump": 0.0,
+     "tower_fan": 11.03,
+     "cooling_total": 376.8,
+     "facility": 1870.8
+    },
+    "pue": 1.336,
+    "wue_l_per_kwh": 2.595
+   }
+  },
+  {
+   "hour": 5,
+   "minute": 0,
+   "t_h": 5.0,
+   "sun": {
+    "altitude_deg": -4.66,
+    "azimuth_deg": -121.8
+   },
+   "surface_solar_w_m2": {
+    "S": 3.0,
+    "W": 3.0,
+    "N": 3.0,
+    "E": 3.0,
+    "roof": 5
+   },
+   "weather": {
+    "dry_bulb_c": 25.0,
+    "rh_pct": 87,
+    "wet_bulb_c": 23.29,
+    "ghi_w_m2": 5
+   },
+   "load_kw": {
+    "it": 1420.0,
+    "ups_loss": 71.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 0.87,
+    "roof_conduction": 0.9,
+    "window_conduction": 0.13,
+    "window_solar": 0.08,
+    "ventilation": 21.61,
+    "crah_fan": 77.0,
+    "total_cooling": 1616.9
+   },
+   "chilled_water": {
+    "flow_m3_h": 231.8,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.56,
+    "power_kw": 246.6
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 1863.5,
+    "flow_m3_h": 320.5,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 2.761,
+    "drift": 0.0641,
+    "blowdown": 0.856,
+    "total": 3.681
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 27.29,
+    "free_cooling_water_c": 28.79,
+    "air_loop": {
+     "load_kw": 1616.9,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1616.9,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 246.6,
+     "crah_fan": 77.0,
+     "chw_pump": 24.25,
+     "cw_pump": 22.36,
+     "liquid_pump": 0.0,
+     "tower_fan": 11.18,
+     "cooling_total": 381.4,
+     "facility": 1896.4
+    },
+    "pue": 1.335,
+    "wue_l_per_kwh": 2.592
+   }
+  },
+  {
+   "hour": 6,
+   "minute": 0,
+   "t_h": 6.0,
+   "sun": {
+    "altitude_deg": 5.91,
+    "azimuth_deg": -112.68
+   },
+   "surface_solar_w_m2": {
+    "S": 29.2,
+    "W": 29.2,
+    "N": 79.8,
+    "E": 150.2,
+    "roof": 60
+   },
+   "weather": {
+    "dry_bulb_c": 25.4,
+    "rh_pct": 85,
+    "wet_bulb_c": 23.4,
+    "ghi_w_m2": 60
+   },
+   "load_kw": {
+    "it": 1460.0,
+    "ups_loss": 73.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 3.31,
+    "roof_conduction": 2.9,
+    "window_conduction": 0.18,
+    "window_solar": 1.71,
+    "ventilation": 22.05,
+    "crah_fan": 79.4,
+    "total_cooling": 1667.9
+   },
+   "chilled_water": {
+    "flow_m3_h": 239.1,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.54,
+    "power_kw": 255.0
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 1922.9,
+    "flow_m3_h": 330.7,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 2.849,
+    "drift": 0.0661,
+    "blowdown": 0.883,
+    "total": 3.798
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 27.4,
+    "free_cooling_water_c": 28.9,
+    "air_loop": {
+     "load_kw": 1667.9,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1667.9,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 255.0,
+     "crah_fan": 79.4,
+     "chw_pump": 25.02,
+     "cw_pump": 23.07,
+     "liquid_pump": 0.0,
+     "tower_fan": 11.54,
+     "cooling_total": 394.1,
+     "facility": 1951.1
+    },
+    "pue": 1.336,
+    "wue_l_per_kwh": 2.602
+   }
+  },
+  {
+   "hour": 7,
+   "minute": 0,
+   "t_h": 7.0,
+   "sun": {
+    "altitude_deg": 17.17,
+    "azimuth_deg": -104.28
+   },
+   "surface_solar_w_m2": {
+    "S": 84.3,
+    "W": 84.3,
+    "N": 131.7,
+    "E": 270.6,
+    "roof": 190
+   },
+   "weather": {
+    "dry_bulb_c": 26.3,
+    "rh_pct": 80,
+    "wet_bulb_c": 23.58,
+    "ghi_w_m2": 190
+   },
+   "load_kw": {
+    "it": 1520.0,
+    "ups_loss": 76.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 6.2,
+    "roof_conduction": 7.59,
+    "window_conduction": 0.29,
+    "window_solar": 3.48,
+    "ventilation": 22.65,
+    "crah_fan": 83.1,
+    "total_cooling": 1744.6
+   },
+   "chilled_water": {
+    "flow_m3_h": 250.1,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.51,
+    "power_kw": 267.8
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2012.4,
+    "flow_m3_h": 346.1,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 2.981,
+    "drift": 0.0692,
+    "blowdown": 0.925,
+    "total": 3.975
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 27.58,
+    "free_cooling_water_c": 29.08,
+    "air_loop": {
+     "load_kw": 1744.6,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1744.6,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 267.8,
+     "crah_fan": 83.1,
+     "chw_pump": 26.17,
+     "cw_pump": 24.15,
+     "liquid_pump": 0.0,
+     "tower_fan": 12.07,
+     "cooling_total": 413.3,
+     "facility": 2033.3
+    },
+    "pue": 1.338,
+    "wue_l_per_kwh": 2.615
+   }
+  },
+  {
+   "hour": 8,
+   "minute": 0,
+   "t_h": 8.0,
+   "sun": {
+    "altitude_deg": 28.87,
+    "azimuth_deg": -95.99
+   },
+   "surface_solar_w_m2": {
+    "S": 132.2,
+    "W": 132.2,
+    "N": 161.7,
+    "E": 412.9,
+    "roof": 350
+   },
+   "weather": {
+    "dry_bulb_c": 27.5,
+    "rh_pct": 74,
+    "wet_bulb_c": 23.86,
+    "ghi_w_m2": 350
+   },
+   "load_kw": {
+    "it": 1600.0,
+    "ups_loss": 80.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 9.16,
+    "roof_conduction": 13.43,
+    "window_conduction": 0.44,
+    "window_solar": 5.06,
+    "ventilation": 23.56,
+    "crah_fan": 87.8,
+    "total_cooling": 1844.8
+   },
+   "chilled_water": {
+    "flow_m3_h": 264.4,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.47,
+    "power_kw": 285.1
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2129.9,
+    "flow_m3_h": 366.3,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 3.155,
+    "drift": 0.0733,
+    "blowdown": 0.979,
+    "total": 4.207
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 27.86,
+    "free_cooling_water_c": 29.36,
+    "air_loop": {
+     "load_kw": 1844.8,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1844.8,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 285.1,
+     "crah_fan": 87.8,
+     "chw_pump": 27.67,
+     "cw_pump": 25.56,
+     "liquid_pump": 0.0,
+     "tower_fan": 12.78,
+     "cooling_total": 438.9,
+     "facility": 2142.9
+    },
+    "pue": 1.339,
+    "wue_l_per_kwh": 2.629
+   }
+  },
+  {
+   "hour": 9,
+   "minute": 0,
+   "t_h": 9.0,
+   "sun": {
+    "altitude_deg": 40.74,
+    "azimuth_deg": -87.03
+   },
+   "surface_solar_w_m2": {
+    "S": 184.9,
+    "W": 168.4,
+    "N": 168.4,
+    "E": 487.5,
+    "roof": 510
+   },
+   "weather": {
+    "dry_bulb_c": 28.8,
+    "rh_pct": 68,
+    "wet_bulb_c": 24.17,
+    "ghi_w_m2": 510
+   },
+   "load_kw": {
+    "it": 1660.0,
+    "ups_loss": 83.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 11.48,
+    "roof_conduction": 19.35,
+    "window_conduction": 0.6,
+    "window_solar": 6.19,
+    "ventilation": 24.52,
+    "crah_fan": 91.5,
+    "total_cooling": 1922.0
+   },
+   "chilled_water": {
+    "flow_m3_h": 275.5,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.42,
+    "power_kw": 299.2
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2221.1,
+    "flow_m3_h": 382.0,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 3.291,
+    "drift": 0.0764,
+    "blowdown": 1.02,
+    "total": 4.387
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 28.17,
+    "free_cooling_water_c": 29.67,
+    "air_loop": {
+     "load_kw": 1922.0,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1922.0,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 299.2,
+     "crah_fan": 91.5,
+     "chw_pump": 28.83,
+     "cw_pump": 26.65,
+     "liquid_pump": 0.0,
+     "tower_fan": 13.33,
+     "cooling_total": 459.5,
+     "facility": 2226.5
+    },
+    "pue": 1.341,
+    "wue_l_per_kwh": 2.643
+   }
+  },
+  {
+   "hour": 10,
+   "minute": 0,
+   "t_h": 10.0,
+   "sun": {
+    "altitude_deg": 52.49,
+    "azimuth_deg": -75.99
+   },
+   "surface_solar_w_m2": {
+    "S": 267.0,
+    "W": 194.1,
+    "N": 194.1,
+    "E": 485.9,
+    "roof": 650
+   },
+   "weather": {
+    "dry_bulb_c": 30.0,
+    "rh_pct": 63,
+    "wet_bulb_c": 24.48,
+    "ghi_w_m2": 650
+   },
+   "load_kw": {
+    "it": 1700.0,
+    "ups_loss": 85.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 13.51,
+    "roof_conduction": 24.57,
+    "window_conduction": 0.76,
+    "window_solar": 7.48,
+    "ventilation": 25.45,
+    "crah_fan": 94.1,
+    "total_cooling": 1976.2
+   },
+   "chilled_water": {
+    "flow_m3_h": 283.3,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.38,
+    "power_kw": 309.9
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2286.0,
+    "flow_m3_h": 393.2,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 3.387,
+    "drift": 0.0786,
+    "blowdown": 1.05,
+    "total": 4.516
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 28.48,
+    "free_cooling_water_c": 29.98,
+    "air_loop": {
+     "load_kw": 1976.2,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1976.2,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 309.9,
+     "crah_fan": 94.1,
+     "chw_pump": 29.64,
+     "cw_pump": 27.43,
+     "liquid_pump": 0.0,
+     "tower_fan": 13.72,
+     "cooling_total": 474.8,
+     "facility": 2283.8
+    },
+    "pue": 1.343,
+    "wue_l_per_kwh": 2.656
+   }
+  },
+  {
+   "hour": 11,
+   "minute": 0,
+   "t_h": 11.0,
+   "sun": {
+    "altitude_deg": 63.51,
+    "azimuth_deg": -59.59
+   },
+   "surface_solar_w_m2": {
+    "S": 333.6,
+    "W": 209.1,
+    "N": 209.1,
+    "E": 421.3,
+    "roof": 760
+   },
+   "weather": {
+    "dry_bulb_c": 31.1,
+    "rh_pct": 59,
+    "wet_bulb_c": 24.82,
+    "ghi_w_m2": 760
+   },
+   "load_kw": {
+    "it": 1700.0,
+    "ups_loss": 85.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 14.7,
+    "roof_conduction": 28.8,
+    "window_conduction": 0.89,
+    "window_solar": 8.2,
+    "ventilation": 26.47,
+    "crah_fan": 94.5,
+    "total_cooling": 1983.8
+   },
+   "chilled_water": {
+    "flow_m3_h": 284.4,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.33,
+    "power_kw": 313.5
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2297.3,
+    "flow_m3_h": 395.1,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 3.403,
+    "drift": 0.079,
+    "blowdown": 1.055,
+    "total": 4.538
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 28.82,
+    "free_cooling_water_c": 30.32,
+    "air_loop": {
+     "load_kw": 1983.8,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1983.8,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 313.5,
+     "crah_fan": 94.5,
+     "chw_pump": 29.76,
+     "cw_pump": 27.57,
+     "liquid_pump": 0.0,
+     "tower_fan": 13.78,
+     "cooling_total": 479.1,
+     "facility": 2288.1
+    },
+    "pue": 1.346,
+    "wue_l_per_kwh": 2.669
+   }
+  },
+  {
+   "hour": 12,
+   "minute": 0,
+   "t_h": 12.0,
+   "sun": {
+    "altitude_deg": 72.0,
+    "azimuth_deg": -29.53
+   },
+   "surface_solar_w_m2": {
+    "S": 374.4,
+    "W": 213.6,
+    "N": 213.6,
+    "E": 304.7,
+    "roof": 830
+   },
+   "weather": {
+    "dry_bulb_c": 32.0,
+    "rh_pct": 56,
+    "wet_bulb_c": 25.1,
+    "ghi_w_m2": 830
+   },
+   "load_kw": {
+    "it": 1680.0,
+    "ups_loss": 84.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 14.98,
+    "roof_conduction": 31.63,
+    "window_conduction": 1.01,
+    "window_solar": 8.28,
+    "ventilation": 27.36,
+    "crah_fan": 93.6,
+    "total_cooling": 1966.2
+   },
+   "chilled_water": {
+    "flow_m3_h": 281.8,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.29,
+    "power_kw": 312.8
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2279.0,
+    "flow_m3_h": 392.0,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 3.376,
+    "drift": 0.0784,
+    "blowdown": 1.047,
+    "total": 4.502
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 29.1,
+    "free_cooling_water_c": 30.6,
+    "air_loop": {
+     "load_kw": 1966.2,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1966.2,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 312.8,
+     "crah_fan": 93.6,
+     "chw_pump": 29.49,
+     "cw_pump": 27.35,
+     "liquid_pump": 0.0,
+     "tower_fan": 13.67,
+     "cooling_total": 477.0,
+     "facility": 2265.0
+    },
+    "pue": 1.348,
+    "wue_l_per_kwh": 2.68
+   }
+  },
+  {
+   "hour": 13,
+   "minute": 0,
+   "t_h": 13.0,
+   "sun": {
+    "altitude_deg": 73.24,
+    "azimuth_deg": 18.27
+   },
+   "surface_solar_w_m2": {
+    "S": 381.5,
+    "W": 266.4,
+    "N": 209.7,
+    "E": 209.7,
+    "roof": 850
+   },
+   "weather": {
+    "dry_bulb_c": 32.6,
+    "rh_pct": 54,
+    "wet_bulb_c": 25.27,
+    "ghi_w_m2": 850
+   },
+   "load_kw": {
+    "it": 1700.0,
+    "ups_loss": 85.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 15.16,
+    "roof_conduction": 32.7,
+    "window_conduction": 1.08,
+    "window_solar": 8.16,
+    "ventilation": 27.87,
+    "crah_fan": 94.8,
+    "total_cooling": 1990.0
+   },
+   "chilled_water": {
+    "flow_m3_h": 285.2,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.26,
+    "power_kw": 317.9
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2308.0,
+    "flow_m3_h": 397.0,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 3.419,
+    "drift": 0.0794,
+    "blowdown": 1.06,
+    "total": 4.559
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 29.27,
+    "free_cooling_water_c": 30.77,
+    "air_loop": {
+     "load_kw": 1990.0,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1990.0,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 317.9,
+     "crah_fan": 94.8,
+     "chw_pump": 29.85,
+     "cw_pump": 27.7,
+     "liquid_pump": 0.0,
+     "tower_fan": 13.85,
+     "cooling_total": 484.1,
+     "facility": 2293.1
+    },
+    "pue": 1.349,
+    "wue_l_per_kwh": 2.682
+   }
+  },
+  {
+   "hour": 14,
+   "minute": 0,
+   "t_h": 14.0,
+   "sun": {
+    "altitude_deg": 66.06,
+    "azimuth_deg": 53.68
+   },
+   "surface_solar_w_m2": {
+    "S": 352.1,
+    "W": 408.1,
+    "N": 197.0,
+    "E": 197.0,
+    "roof": 820
+   },
+   "weather": {
+    "dry_bulb_c": 33.0,
+    "rh_pct": 53,
+    "wet_bulb_c": 25.44,
+    "ghi_w_m2": 820
+   },
+   "load_kw": {
+    "it": 1700.0,
+    "ups_loss": 85.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 16.04,
+    "roof_conduction": 32.07,
+    "window_conduction": 1.13,
+    "window_solar": 8.22,
+    "ventilation": 28.45,
+    "crah_fan": 94.8,
+    "total_cooling": 1991.0
+   },
+   "chilled_water": {
+    "flow_m3_h": 285.4,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.23,
+    "power_kw": 319.3
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2310.4,
+    "flow_m3_h": 397.4,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 3.423,
+    "drift": 0.0795,
+    "blowdown": 1.061,
+    "total": 4.564
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 29.44,
+    "free_cooling_water_c": 30.94,
+    "air_loop": {
+     "load_kw": 1991.0,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1991.0,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 319.3,
+     "crah_fan": 94.8,
+     "chw_pump": 29.87,
+     "cw_pump": 27.72,
+     "liquid_pump": 0.0,
+     "tower_fan": 13.86,
+     "cooling_total": 485.6,
+     "facility": 2294.6
+    },
+    "pue": 1.35,
+    "wue_l_per_kwh": 2.685
+   }
+  },
+  {
+   "hour": 15,
+   "minute": 0,
+   "t_h": 15.0,
+   "sun": {
+    "altitude_deg": 55.42,
+    "azimuth_deg": 72.5
+   },
+   "surface_solar_w_m2": {
+    "S": 287.7,
+    "W": 528.0,
+    "N": 177.0,
+    "E": 177.0,
+    "roof": 740
+   },
+   "weather": {
+    "dry_bulb_c": 32.9,
+    "rh_pct": 53,
+    "wet_bulb_c": 25.35,
+    "ghi_w_m2": 740
+   },
+   "load_kw": {
+    "it": 1700.0,
+    "ups_loss": 85.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 15.95,
+    "roof_conduction": 29.53,
+    "window_conduction": 1.12,
+    "window_solar": 7.69,
+    "ventilation": 28.1,
+    "crah_fan": 94.6,
+    "total_cooling": 1987.3
+   },
+   "chilled_water": {
+    "flow_m3_h": 284.9,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.25,
+    "power_kw": 318.1
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2305.4,
+    "flow_m3_h": 396.5,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 3.415,
+    "drift": 0.0793,
+    "blowdown": 1.059,
+    "total": 4.554
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 29.35,
+    "free_cooling_water_c": 30.85,
+    "air_loop": {
+     "load_kw": 1987.3,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1987.3,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 318.1,
+     "crah_fan": 94.6,
+     "chw_pump": 29.81,
+     "cw_pump": 27.66,
+     "liquid_pump": 0.0,
+     "tower_fan": 13.83,
+     "cooling_total": 484.0,
+     "facility": 2293.0
+    },
+    "pue": 1.349,
+    "wue_l_per_kwh": 2.679
+   }
+  },
+  {
+   "hour": 16,
+   "minute": 0,
+   "t_h": 16.0,
+   "sun": {
+    "altitude_deg": 43.78,
+    "azimuth_deg": 84.48
+   },
+   "surface_solar_w_m2": {
+    "S": 195.9,
+    "W": 595.3,
+    "N": 153.1,
+    "E": 153.1,
+    "roof": 610
+   },
+   "weather": {
+    "dry_bulb_c": 32.4,
+    "rh_pct": 55,
+    "wet_bulb_c": 25.27,
+    "ghi_w_m2": 610
+   },
+   "load_kw": {
+    "it": 1680.0,
+    "ups_loss": 84.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 14.88,
+    "roof_conduction": 25.14,
+    "window_conduction": 1.06,
+    "window_solar": 6.57,
+    "ventilation": 27.97,
+    "crah_fan": 93.2,
+    "total_cooling": 1958.2
+   },
+   "chilled_water": {
+    "flow_m3_h": 280.7,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.26,
+    "power_kw": 312.9
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2271.0,
+    "flow_m3_h": 390.6,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 3.364,
+    "drift": 0.0781,
+    "blowdown": 1.043,
+    "total": 4.486
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 29.27,
+    "free_cooling_water_c": 30.77,
+    "air_loop": {
+     "load_kw": 1958.2,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1958.2,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 312.9,
+     "crah_fan": 93.2,
+     "chw_pump": 29.37,
+     "cw_pump": 27.25,
+     "liquid_pump": 0.0,
+     "tower_fan": 13.63,
+     "cooling_total": 476.4,
+     "facility": 2264.4
+    },
+    "pue": 1.348,
+    "wue_l_per_kwh": 2.67
+   }
+  },
+  {
+   "hour": 17,
+   "minute": 0,
+   "t_h": 17.0,
+   "sun": {
+    "altitude_deg": 31.91,
+    "azimuth_deg": 93.79
+   },
+   "surface_solar_w_m2": {
+    "S": 123.0,
+    "W": 594.2,
+    "N": 154.3,
+    "E": 123.0,
+    "roof": 450
+   },
+   "weather": {
+    "dry_bulb_c": 31.6,
+    "rh_pct": 58,
+    "wet_bulb_c": 25.09,
+    "ghi_w_m2": 450
+   },
+   "load_kw": {
+    "it": 1660.0,
+    "ups_loss": 83.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 13.42,
+    "roof_conduction": 19.6,
+    "window_conduction": 0.96,
+    "window_solar": 5.58,
+    "ventilation": 27.49,
+    "crah_fan": 91.8,
+    "total_cooling": 1927.1
+   },
+   "chilled_water": {
+    "flow_m3_h": 276.2,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.29,
+    "power_kw": 306.6
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2233.7,
+    "flow_m3_h": 384.2,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 3.309,
+    "drift": 0.0768,
+    "blowdown": 1.026,
+    "total": 4.412
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 29.09,
+    "free_cooling_water_c": 30.59,
+    "air_loop": {
+     "load_kw": 1927.1,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1927.1,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 306.6,
+     "crah_fan": 91.8,
+     "chw_pump": 28.91,
+     "cw_pump": 26.8,
+     "liquid_pump": 0.0,
+     "tower_fan": 13.4,
+     "cooling_total": 467.4,
+     "facility": 2234.4
+    },
+    "pue": 1.346,
+    "wue_l_per_kwh": 2.658
+   }
+  },
+  {
+   "hour": 18,
+   "minute": 0,
+   "t_h": 18.0,
+   "sun": {
+    "altitude_deg": 20.14,
+    "azimuth_deg": 102.16
+   },
+   "surface_solar_w_m2": {
+    "S": 88.5,
+    "W": 480.0,
+    "N": 172.9,
+    "E": 88.5,
+    "roof": 270
+   },
+   "weather": {
+    "dry_bulb_c": 30.5,
+    "rh_pct": 63,
+    "wet_bulb_c": 24.94,
+    "ghi_w_m2": 270
+   },
+   "load_kw": {
+    "it": 1620.0,
+    "ups_loss": 81.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 11.36,
+    "roof_conduction": 13.21,
+    "window_conduction": 0.82,
+    "window_solar": 4.72,
+    "ventilation": 27.25,
+    "crah_fan": 89.2,
+    "total_cooling": 1872.9
+   },
+   "chilled_water": {
+    "flow_m3_h": 268.4,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.31,
+    "power_kw": 296.8
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2169.7,
+    "flow_m3_h": 373.2,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 3.214,
+    "drift": 0.0746,
+    "blowdown": 0.997,
+    "total": 4.286
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 28.94,
+    "free_cooling_water_c": 30.44,
+    "air_loop": {
+     "load_kw": 1872.9,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1872.9,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 296.8,
+     "crah_fan": 89.2,
+     "chw_pump": 28.09,
+     "cw_pump": 26.04,
+     "liquid_pump": 0.0,
+     "tower_fan": 13.02,
+     "cooling_total": 453.2,
+     "facility": 2178.2
+    },
+    "pue": 1.345,
+    "wue_l_per_kwh": 2.646
+   }
+  },
+  {
+   "hour": 19,
+   "minute": 0,
+   "t_h": 19.0,
+   "sun": {
+    "altitude_deg": 8.74,
+    "azimuth_deg": 110.48
+   },
+   "surface_solar_w_m2": {
+    "S": 41.7,
+    "W": 338.1,
+    "N": 152.4,
+    "E": 41.7,
+    "roof": 110
+   },
+   "weather": {
+    "dry_bulb_c": 29.4,
+    "rh_pct": 68,
+    "wet_bulb_c": 24.73,
+    "ghi_w_m2": 110
+   },
+   "load_kw": {
+    "it": 1580.0,
+    "ups_loss": 79.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 8.57,
+    "roof_conduction": 7.45,
+    "window_conduction": 0.68,
+    "window_solar": 3.24,
+    "ventilation": 26.71,
+    "crah_fan": 86.5,
+    "total_cooling": 1817.5
+   },
+   "chilled_water": {
+    "flow_m3_h": 260.5,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.34,
+    "power_kw": 286.6
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2104.1,
+    "flow_m3_h": 361.9,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 3.117,
+    "drift": 0.0724,
+    "blowdown": 0.967,
+    "total": 4.156
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 28.73,
+    "free_cooling_water_c": 30.23,
+    "air_loop": {
+     "load_kw": 1817.5,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1817.5,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 286.6,
+     "crah_fan": 86.5,
+     "chw_pump": 27.26,
+     "cw_pump": 25.25,
+     "liquid_pump": 0.0,
+     "tower_fan": 12.62,
+     "cooling_total": 438.3,
+     "facility": 2121.3
+    },
+    "pue": 1.343,
+    "wue_l_per_kwh": 2.631
+   }
+  },
+  {
+   "hour": 20,
+   "minute": 0,
+   "t_h": 20.0,
+   "sun": {
+    "altitude_deg": -2.04,
+    "azimuth_deg": 119.37
+   },
+   "surface_solar_w_m2": {
+    "S": 9.0,
+    "W": 9.0,
+    "N": 9.0,
+    "E": 9.0,
+    "roof": 15
+   },
+   "weather": {
+    "dry_bulb_c": 28.5,
+    "rh_pct": 72,
+    "wet_bulb_c": 24.5,
+    "ghi_w_m2": 15
+   },
+   "load_kw": {
+    "it": 1560.0,
+    "ups_loss": 78.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 3.75,
+    "roof_conduction": 3.84,
+    "window_conduction": 0.57,
+    "window_solar": 0.25,
+    "ventilation": 26.01,
+    "crah_fan": 84.9,
+    "total_cooling": 1782.6
+   },
+   "chilled_water": {
+    "flow_m3_h": 255.5,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.37,
+    "power_kw": 279.6
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2062.2,
+    "flow_m3_h": 354.7,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 3.055,
+    "drift": 0.0709,
+    "blowdown": 0.947,
+    "total": 4.074
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 28.5,
+    "free_cooling_water_c": 30.0,
+    "air_loop": {
+     "load_kw": 1782.6,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1782.6,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 279.6,
+     "crah_fan": 84.9,
+     "chw_pump": 26.74,
+     "cw_pump": 24.75,
+     "liquid_pump": 0.0,
+     "tower_fan": 12.37,
+     "cooling_total": 428.4,
+     "facility": 2090.4
+    },
+    "pue": 1.34,
+    "wue_l_per_kwh": 2.611
+   }
+  },
+  {
+   "hour": 21,
+   "minute": 0,
+   "t_h": 21.0,
+   "sun": {
+    "altitude_deg": -11.85,
+    "azimuth_deg": 129.36
+   },
+   "surface_solar_w_m2": {
+    "S": 0.0,
+    "W": 0.0,
+    "N": 0.0,
+    "E": 0.0,
+    "roof": 0
+   },
+   "weather": {
+    "dry_bulb_c": 27.8,
+    "rh_pct": 75,
+    "wet_bulb_c": 24.29,
+    "ghi_w_m2": 0
+   },
+   "load_kw": {
+    "it": 1520.0,
+    "ups_loss": 76.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 2.93,
+    "roof_conduction": 2.85,
+    "window_conduction": 0.48,
+    "window_solar": 0.0,
+    "ventilation": 25.29,
+    "crah_fan": 82.6,
+    "total_cooling": 1735.5
+   },
+   "chilled_water": {
+    "flow_m3_h": 248.8,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.41,
+    "power_kw": 270.9
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 2006.4,
+    "flow_m3_h": 345.1,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 2.972,
+    "drift": 0.069,
+    "blowdown": 0.922,
+    "total": 3.963
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 28.29,
+    "free_cooling_water_c": 29.79,
+    "air_loop": {
+     "load_kw": 1735.5,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1735.5,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 270.9,
+     "crah_fan": 82.6,
+     "chw_pump": 26.03,
+     "cw_pump": 24.08,
+     "liquid_pump": 0.0,
+     "tower_fan": 12.04,
+     "cooling_total": 415.7,
+     "facility": 2035.7
+    },
+    "pue": 1.339,
+    "wue_l_per_kwh": 2.607
+   }
+  },
+  {
+   "hour": 22,
+   "minute": 0,
+   "t_h": 22.0,
+   "sun": {
+    "altitude_deg": -20.24,
+    "azimuth_deg": 140.97
+   },
+   "surface_solar_w_m2": {
+    "S": 0.0,
+    "W": 0.0,
+    "N": 0.0,
+    "E": 0.0,
+    "roof": 0
+   },
+   "weather": {
+    "dry_bulb_c": 27.2,
+    "rh_pct": 78,
+    "wet_bulb_c": 24.15,
+    "ghi_w_m2": 0
+   },
+   "load_kw": {
+    "it": 1500.0,
+    "ups_loss": 75.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 2.46,
+    "roof_conduction": 2.4,
+    "window_conduction": 0.4,
+    "window_solar": 0.0,
+    "ventilation": 24.85,
+    "crah_fan": 81.5,
+    "total_cooling": 1711.9
+   },
+   "chilled_water": {
+    "flow_m3_h": 245.4,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.43,
+    "power_kw": 266.4
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 1978.3,
+    "flow_m3_h": 340.3,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 2.931,
+    "drift": 0.0681,
+    "blowdown": 0.909,
+    "total": 3.908
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 28.15,
+    "free_cooling_water_c": 29.65,
+    "air_loop": {
+     "load_kw": 1711.9,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1711.9,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 266.4,
+     "crah_fan": 81.5,
+     "chw_pump": 25.68,
+     "cw_pump": 23.74,
+     "liquid_pump": 0.0,
+     "tower_fan": 11.87,
+     "cooling_total": 409.2,
+     "facility": 2008.2
+    },
+    "pue": 1.339,
+    "wue_l_per_kwh": 2.605
+   }
+  },
+  {
+   "hour": 23,
+   "minute": 0,
+   "t_h": 23.0,
+   "sun": {
+    "altitude_deg": -26.6,
+    "azimuth_deg": 154.52
+   },
+   "surface_solar_w_m2": {
+    "S": 0.0,
+    "W": 0.0,
+    "N": 0.0,
+    "E": 0.0,
+    "roof": 0
+   },
+   "weather": {
+    "dry_bulb_c": 26.8,
+    "rh_pct": 80,
+    "wet_bulb_c": 24.06,
+    "ghi_w_m2": 0
+   },
+   "load_kw": {
+    "it": 1460.0,
+    "ups_loss": 73.0,
+    "lighting": 24.0,
+    "people": 1.3,
+    "wall_conduction": 2.16,
+    "roof_conduction": 2.1,
+    "window_conduction": 0.35,
+    "window_solar": 0.0,
+    "ventilation": 24.52,
+    "crah_fan": 79.4,
+    "total_cooling": 1666.8
+   },
+   "chilled_water": {
+    "flow_m3_h": 238.9,
+    "supply_c": 12.0,
+    "return_c": 18.0
+   },
+   "chiller": {
+    "cop": 6.44,
+    "power_kw": 258.8
+   },
+   "condenser_water": {
+    "heat_rejection_kw": 1925.6,
+    "flow_m3_h": 331.2,
+    "supply_c": 32.0,
+    "return_c": 37.0
+   },
+   "makeup_water_m3_h": {
+    "evaporation": 2.853,
+    "drift": 0.0662,
+    "blowdown": 0.885,
+    "total": 3.804
+   },
+   "plant": {
+    "mode": "chiller",
+    "tower_water_c": 28.06,
+    "free_cooling_water_c": 29.56,
+    "air_loop": {
+     "load_kw": 1666.8,
+     "free_fraction": 0.0,
+     "chiller_load_kw": 1666.8,
+     "mode": "chiller"
+    },
+    "liquid_loop": null,
+    "power_kw": {
+     "chiller": 258.8,
+     "crah_fan": 79.4,
+     "chw_pump": 25.0,
+     "cw_pump": 23.11,
+     "liquid_pump": 0.0,
+     "tower_fan": 11.55,
+     "cooling_total": 397.8,
+     "facility": 1954.8
+    },
+    "pue": 1.339,
+    "wue_l_per_kwh": 2.605
+   }
+  }
+ ],
+ "daily_total": {
+  "cooling_kwh": 43215.0,
+  "chiller_kwh": 6763.0,
+  "chw_m3": 6194.0,
+  "cw_m3": 8596.0,
+  "makeup_m3": 98.7,
+  "it_kwh": 37480.0,
+  "cooling_power_kwh": 10369.0,
+  "facility_kwh": 50299.0,
+  "pue": 1.342,
+  "wue_l_per_kwh": 2.634,
+  "free_cooling_hours": 0.0,
+  "partial_free_cooling_hours": 0.0
+ }
+}

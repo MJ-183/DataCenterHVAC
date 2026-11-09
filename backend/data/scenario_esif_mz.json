@@ -1,0 +1,1132 @@
+{
+  "_note": "NREL ESIF HPC 데이터센터 근사 (공개 자료 + 가정, cad/esif_approx.dxf 를 CAD 가져오기로 변환). 실제 설계 도면 아님. 조건은 validation_esif 비교와 같음",
+  "site": {
+    "name": "NREL ESIF HPC DC 근사 (다중 존)",
+    "latitude": 39.74,
+    "longitude": -105.17,
+    "std_meridian": -105.0,
+    "date": "2017-07-15"
+  },
+  "weather": {
+    "dry_bulb_c": [
+      19.0,
+      21.0,
+      19.0,
+      19.0,
+      19.0,
+      19.0,
+      21.0,
+      23.0,
+      24.0,
+      25.0,
+      27.0,
+      29.0,
+      31.0,
+      32.0,
+      30.0,
+      28.0,
+      28.0,
+      26.0,
+      23.0,
+      22.0,
+      21.0,
+      19.0,
+      18.0,
+      18.0
+    ],
+    "rh_pct": [
+      52.0,
+      46.0,
+      52.0,
+      56.0,
+      52.0,
+      52.0,
+      49.0,
+      47.0,
+      44.0,
+      41.0,
+      39.0,
+      33.0,
+      29.0,
+      26.0,
+      33.0,
+      42.0,
+      37.0,
+      42.0,
+      65.0,
+      69.0,
+      73.0,
+      83.0,
+      88.0,
+      88.0
+    ],
+    "ghi_w_m2": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      45.0,
+      178.0,
+      361.0,
+      552.0,
+      720.5,
+      859.0,
+      787.0,
+      775.5,
+      545.0,
+      215.5,
+      257.0,
+      220.0,
+      122.5,
+      52.0,
+      14.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "indoor": {
+    "temp_c": 24.0,
+    "rh_pct": 50.0
+  },
+  "envelope": {
+    "walls": [
+      {
+        "orientation": "N",
+        "area_m2": 420.9,
+        "u_value": 0.35,
+        "absorptance": 0.7
+      },
+      {
+        "orientation": "E",
+        "area_m2": 611.8,
+        "u_value": 0.35,
+        "absorptance": 0.7
+      },
+      {
+        "orientation": "S",
+        "area_m2": 420.9,
+        "u_value": 0.35,
+        "absorptance": 0.7
+      },
+      {
+        "orientation": "W",
+        "area_m2": 611.8,
+        "u_value": 0.35,
+        "absorptance": 0.7
+      }
+    ],
+    "roof": {
+      "area_m2": 1113.3,
+      "u_value": 0.25,
+      "absorptance": 0.7
+    },
+    "windows": []
+  },
+  "it_load": {
+    "design_kw": 909.6,
+    "utilization": [
+      1.0372,
+      1.0382,
+      1.0302,
+      1.0284,
+      1.0239,
+      1.0255,
+      1.022,
+      1.0115,
+      1.0041,
+      0.9975,
+      0.9739,
+      0.9563,
+      0.9645,
+      0.9604,
+      0.9544,
+      0.9248,
+      0.9348,
+      0.9345,
+      0.9186,
+      0.8906,
+      0.9261,
+      0.9187,
+      0.9175,
+      0.9044
+    ]
+  },
+  "internal": {
+    "floor_area_m2": 3995.6,
+    "lighting_w_m2": 4.0,
+    "people": 0.0,
+    "people_kw_each": 0.13,
+    "ups_loss_ratio": 0.0
+  },
+  "ventilation": {
+    "outdoor_air_m3_h": 1000.0
+  },
+  "cooling_plant": {
+    "chw_supply_c": 21.0,
+    "chw_return_c": 27.0,
+    "cw_supply_c": 32.0,
+    "cw_return_c": 37.0,
+    "chiller_cop_rated": 6.0,
+    "design_wet_bulb_c": 27.0,
+    "cop_wb_sensitivity": 0.025,
+    "crah_fan_heat_ratio": 0.05,
+    "tower_cycles_of_concentration": 4.0,
+    "tower_drift_ratio": 0.0002,
+    "architecture": "hybrid_dlc",
+    "liquid_fraction": 0.793,
+    "immersion_capture": 0.95,
+    "tcs_supply_c": 24.0,
+    "tcs_return_c": 35.0,
+    "cdu_approach_k": 3.0,
+    "free_cooling": true,
+    "tower_approach_k": 4.0,
+    "hx_approach_k": 1.5,
+    "cop_supply_sensitivity": 0.03,
+    "cop_ref_supply_c": 12.0,
+    "chw_pump_kw_per_kw": 0.015,
+    "cw_pump_kw_per_kw": 0.012,
+    "liquid_pump_kw_per_kw": 0.02,
+    "tower_fan_kw_per_kw": 0.006
+  },
+  "cooling_layout": {
+    "racks": {
+      "rows": 8,
+      "per_row": 40,
+      "width_m": 0.6,
+      "depth_m": 1.2,
+      "aisle_m": 2.4
+    },
+    "crah": {
+      "per_side": 5,
+      "airflow_ratio": 1.0,
+      "design_margin": 1.2,
+      "fan_kw_per_m3_s": 0.35,
+      "throw_length_m": 18.0,
+      "tile_balancing": 0.3
+    },
+    "plant": {
+      "gap_east_m": 12.0,
+      "chiller_size_m": [
+        8.0,
+        3.0,
+        3.0
+      ],
+      "chiller_z_m": -6.0,
+      "tower_size_m": [
+        3.7,
+        5.0,
+        3.7
+      ],
+      "tower_z_m": -12.9,
+      "standby_units": 1,
+      "tower_positions": [
+        [
+          -11.9,
+          -12.9
+        ],
+        [
+          -7.8,
+          -12.9
+        ],
+        [
+          -3.7,
+          -12.9
+        ],
+        [
+          0.4,
+          -12.9
+        ]
+      ],
+      "cdu_positions": [
+        {
+          "floor": 2,
+          "x_m": -10.1,
+          "z_m": -4.0
+        },
+        {
+          "floor": 2,
+          "x_m": -8.3,
+          "z_m": -4.0
+        },
+        {
+          "floor": 2,
+          "x_m": -6.5,
+          "z_m": -4.0
+        },
+        {
+          "floor": 2,
+          "x_m": -4.7,
+          "z_m": -4.0
+        },
+        {
+          "floor": 2,
+          "x_m": -2.9,
+          "z_m": -4.0
+        },
+        {
+          "floor": 2,
+          "x_m": -10.1,
+          "z_m": -6.4
+        },
+        {
+          "floor": 2,
+          "x_m": -8.3,
+          "z_m": -6.4
+        },
+        {
+          "floor": 2,
+          "x_m": -6.5,
+          "z_m": -6.4
+        },
+        {
+          "floor": 2,
+          "x_m": -4.7,
+          "z_m": -6.4
+        },
+        {
+          "floor": 2,
+          "x_m": -2.9,
+          "z_m": -6.4
+        }
+      ]
+    },
+    "piping": {
+      "topology": "radial",
+      "max_velocity_m_s": 2.0,
+      "fitting_factor": 1.5,
+      "pump_efficiency": 0.65,
+      "evaporator_dp_kpa": 50.0,
+      "coil_dp_kpa": 80.0,
+      "condenser_dp_kpa": 60.0,
+      "tower_static_kpa": 50.0
+    },
+    "containment": "hot_aisle",
+    "supply_temp_c": 22.0,
+    "server_delta_t_k": 12.0,
+    "inlet_limit_c": 27.0,
+    "coil_approach_k": 1.0,
+    "coil_return_approach_k": 2.0,
+    "recirculation_scale": 1.0
+  },
+  "building": {
+    "source": "esif_approx.dxf",
+    "ew_m": 30.5,
+    "ns_m": 33.5,
+    "height_m": 18.7,
+    "rotation_deg": 0.0,
+    "footprint": [
+      [
+        -15.25,
+        16.75
+      ],
+      [
+        15.25,
+        16.75
+      ],
+      [
+        15.25,
+        -16.75
+      ],
+      [
+        -15.25,
+        -16.75
+      ]
+    ]
+  },
+  "zones": [
+    {
+      "id": "pump_1f",
+      "name": "L1 PUMP ROOM",
+      "floor": 0,
+      "kind": "support",
+      "geometry": {
+        "ew_m": 30.5,
+        "ns_m": 33.5,
+        "height_m": 4.6,
+        "x_m": 0.0,
+        "z_m": 0.0
+      },
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "area_m2": 140.3,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "E",
+            "area_m2": 154.1,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "S",
+            "area_m2": 140.3,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "W",
+            "area_m2": 154.1,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          }
+        ],
+        "roof": {
+          "area_m2": 0.0,
+          "u_value": 0.25,
+          "absorptance": 0.7
+        },
+        "windows": []
+      },
+      "it_design_kw": 0.0,
+      "indoor": {
+        "temp_c": 30.0,
+        "rh_pct": 50.0
+      },
+      "floor_area_m2": 1021.8,
+      "lighting_w_m2": 0.0,
+      "people": 0.0,
+      "misc_kw": 3.0,
+      "outdoor_air_m3_h": 0.0,
+      "partitions": [
+        {
+          "zone": "mech_2f",
+          "area_m2": 1021.8,
+          "u_value": 2.0,
+          "kind": "slab"
+        }
+      ]
+    },
+    {
+      "id": "mech_2f",
+      "name": "L2 MECH (PUMPS, POWER, HX, FAN WALLS)",
+      "floor": 1,
+      "kind": "support",
+      "geometry": {
+        "ew_m": 30.5,
+        "ns_m": 33.5,
+        "height_m": 4.6,
+        "x_m": 0.0,
+        "z_m": 0.0
+      },
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "area_m2": 140.3,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "E",
+            "area_m2": 154.1,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "S",
+            "area_m2": 140.3,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "W",
+            "area_m2": 154.1,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          }
+        ],
+        "roof": {
+          "area_m2": 91.5,
+          "u_value": 0.25,
+          "absorptance": 0.7
+        },
+        "windows": []
+      },
+      "it_design_kw": 0.0,
+      "indoor": {
+        "temp_c": 30.0,
+        "rh_pct": 50.0
+      },
+      "floor_area_m2": 1021.8,
+      "lighting_w_m2": 0.0,
+      "people": 0.0,
+      "misc_kw": 8.0,
+      "outdoor_air_m3_h": 0.0,
+      "partitions": [
+        {
+          "zone": "dc_3f",
+          "area_m2": 930.2,
+          "u_value": 2.0,
+          "kind": "slab"
+        }
+      ]
+    },
+    {
+      "id": "dc_3f",
+      "name": "L3 HPC DATA CENTER 10,000 FT2",
+      "floor": 2,
+      "kind": "data_hall",
+      "geometry": {
+        "ew_m": 30.5,
+        "ns_m": 30.5,
+        "height_m": 4.9,
+        "x_m": 0.0,
+        "z_m": 0.0
+      },
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "E",
+            "area_m2": 149.5,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "W",
+            "area_m2": 149.5,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          }
+        ],
+        "roof": {
+          "area_m2": 0.0,
+          "u_value": 0.25,
+          "absorptance": 0.7
+        },
+        "windows": []
+      },
+      "it_design_kw": 909.6,
+      "floor_area_m2": 930.2,
+      "lighting_w_m2": 4.0,
+      "people": 0.0,
+      "outdoor_air_m3_h": 1000.0,
+      "architecture": "hybrid_dlc",
+      "liquid_fraction": 0.793,
+      "racks": {
+        "rows": 4,
+        "per_row": 25,
+        "width_m": 0.6,
+        "depth_m": 1.2,
+        "aisle_m": 1.2,
+        "items": [
+          {
+            "id": "N10",
+            "x_m": -10.7,
+            "z_m": -6.4,
+            "row": 0,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N11",
+            "x_m": -9.5,
+            "z_m": -6.4,
+            "row": 0,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N12",
+            "x_m": -8.9,
+            "z_m": -6.4,
+            "row": 0,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N13",
+            "x_m": -7.7,
+            "z_m": -6.4,
+            "row": 0,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N14",
+            "x_m": -7.1,
+            "z_m": -6.4,
+            "row": 0,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N15",
+            "x_m": -5.9,
+            "z_m": -6.4,
+            "row": 0,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N16",
+            "x_m": -5.3,
+            "z_m": -6.4,
+            "row": 0,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N17",
+            "x_m": -4.1,
+            "z_m": -6.4,
+            "row": 0,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N18",
+            "x_m": -3.5,
+            "z_m": -6.4,
+            "row": 0,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N01",
+            "x_m": -10.7,
+            "z_m": -4.0,
+            "row": 1,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N02",
+            "x_m": -9.5,
+            "z_m": -4.0,
+            "row": 1,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N03",
+            "x_m": -8.9,
+            "z_m": -4.0,
+            "row": 1,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N04",
+            "x_m": -7.7,
+            "z_m": -4.0,
+            "row": 1,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N05",
+            "x_m": -7.1,
+            "z_m": -4.0,
+            "row": 1,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N06",
+            "x_m": -5.9,
+            "z_m": -4.0,
+            "row": 1,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N07",
+            "x_m": -5.3,
+            "z_m": -4.0,
+            "row": 1,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N08",
+            "x_m": -4.1,
+            "z_m": -4.0,
+            "row": 1,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "N09",
+            "x_m": -3.5,
+            "z_m": -4.0,
+            "row": 1,
+            "design_kw": 42.2,
+            "liquid_fraction": 0.95
+          },
+          {
+            "id": "A26",
+            "x_m": -10.7,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A27",
+            "x_m": -10.1,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A28",
+            "x_m": -9.5,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A29",
+            "x_m": -8.9,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A30",
+            "x_m": -8.3,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A31",
+            "x_m": -7.7,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A32",
+            "x_m": -7.1,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A33",
+            "x_m": -6.5,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A34",
+            "x_m": -5.9,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A35",
+            "x_m": -5.3,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A36",
+            "x_m": -4.7,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A37",
+            "x_m": -4.1,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A38",
+            "x_m": -3.5,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A39",
+            "x_m": -2.9,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A40",
+            "x_m": -2.3,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A41",
+            "x_m": -1.7,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A42",
+            "x_m": -1.1,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A43",
+            "x_m": -0.5,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A44",
+            "x_m": 0.1,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A45",
+            "x_m": 0.7,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A46",
+            "x_m": 1.3,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A47",
+            "x_m": 1.9,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A48",
+            "x_m": 2.5,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A49",
+            "x_m": 3.1,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A50",
+            "x_m": 3.7,
+            "z_m": 4.6,
+            "row": 2,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A01",
+            "x_m": -10.7,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A02",
+            "x_m": -10.1,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A03",
+            "x_m": -9.5,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A04",
+            "x_m": -8.9,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A05",
+            "x_m": -8.3,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A06",
+            "x_m": -7.7,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A07",
+            "x_m": -7.1,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A08",
+            "x_m": -6.5,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A09",
+            "x_m": -5.9,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A10",
+            "x_m": -5.3,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A11",
+            "x_m": -4.7,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A12",
+            "x_m": -4.1,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A13",
+            "x_m": -3.5,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A14",
+            "x_m": -2.9,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A15",
+            "x_m": -2.3,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A16",
+            "x_m": -1.7,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A17",
+            "x_m": -1.1,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A18",
+            "x_m": -0.5,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A19",
+            "x_m": 0.1,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A20",
+            "x_m": 0.7,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A21",
+            "x_m": 1.3,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A22",
+            "x_m": 1.9,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A23",
+            "x_m": 2.5,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A24",
+            "x_m": 3.1,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          },
+          {
+            "id": "A25",
+            "x_m": 3.7,
+            "z_m": 7.0,
+            "row": 3,
+            "design_kw": 3.0,
+            "liquid_fraction": 0.0
+          }
+        ]
+      },
+      "partitions": [
+        {
+          "zone": "mech_4f",
+          "area_m2": 930.2,
+          "u_value": 2.0,
+          "kind": "slab"
+        }
+      ]
+    },
+    {
+      "id": "mech_4f",
+      "name": "L4 MECH (TOWER HX, SUMPS)",
+      "floor": 3,
+      "kind": "support",
+      "geometry": {
+        "ew_m": 30.5,
+        "ns_m": 33.5,
+        "height_m": 4.6,
+        "x_m": 0.0,
+        "z_m": 0.0
+      },
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "area_m2": 140.3,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "E",
+            "area_m2": 154.1,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "S",
+            "area_m2": 140.3,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          },
+          {
+            "orientation": "W",
+            "area_m2": 154.1,
+            "u_value": 0.35,
+            "absorptance": 0.7
+          }
+        ],
+        "roof": {
+          "area_m2": 1021.8,
+          "u_value": 0.25,
+          "absorptance": 0.7
+        },
+        "windows": []
+      },
+      "it_design_kw": 0.0,
+      "indoor": {
+        "temp_c": 30.0,
+        "rh_pct": 50.0
+      },
+      "floor_area_m2": 1021.8,
+      "lighting_w_m2": 0.0,
+      "people": 0.0,
+      "misc_kw": 2.0,
+      "outdoor_air_m3_h": 0.0,
+      "partitions": []
+    }
+  ]
+}

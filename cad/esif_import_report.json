@@ -1,0 +1,185 @@
+{
+ "effective_liquid_fraction": 0.7933,
+ "layers": {
+  "F1-A-OUTLINE": "outline",
+  "F1-A-WALL": "wall",
+  "F1-ZONE": "zone",
+  "F2-A-OUTLINE": "outline",
+  "F2-A-WALL": "wall",
+  "F2-ZONE": "zone",
+  "F3-A-OUTLINE": "outline",
+  "F3-A-WALL": "wall",
+  "F3-DC-CDU": "cdu",
+  "F3-DC-RACK": "rack",
+  "F3-DC-SLOT": "slot",
+  "F3-ZONE": "zone",
+  "F4-A-OUTLINE": "outline",
+  "F4-A-WALL": "wall",
+  "F4-ZONE": "zone",
+  "ROOF-M-TOWER": "tower"
+ },
+ "blocks": {
+  "CDU_UNIT_600x1200x2200": "cdu",
+  "RACK_600x1200x2200": "rack",
+  "SLOT_600x1200": "slot"
+ },
+ "zones": [
+  {
+   "id": "pump_1f",
+   "kind": "support",
+   "floor": 0,
+   "floor_area_m2": 1021.8,
+   "it_design_kw": 0.0,
+   "geometry": {
+    "ew_m": 30.5,
+    "ns_m": 33.5,
+    "height_m": 4.6,
+    "x_m": 0.0,
+    "z_m": 0.0
+   },
+   "n_racks": 0
+  },
+  {
+   "id": "mech_2f",
+   "kind": "support",
+   "floor": 1,
+   "floor_area_m2": 1021.8,
+   "it_design_kw": 0.0,
+   "geometry": {
+    "ew_m": 30.5,
+    "ns_m": 33.5,
+    "height_m": 4.6,
+    "x_m": 0.0,
+    "z_m": 0.0
+   },
+   "n_racks": 0
+  },
+  {
+   "id": "dc_3f",
+   "kind": "data_hall",
+   "floor": 2,
+   "floor_area_m2": 930.2,
+   "it_design_kw": 909.6,
+   "geometry": {
+    "ew_m": 30.5,
+    "ns_m": 30.5,
+    "height_m": 4.9,
+    "x_m": 0.0,
+    "z_m": 0.0
+   },
+   "n_racks": 68
+  },
+  {
+   "id": "mech_4f",
+   "kind": "support",
+   "floor": 3,
+   "floor_area_m2": 1021.8,
+   "it_design_kw": 0.0,
+   "geometry": {
+    "ew_m": 30.5,
+    "ns_m": 33.5,
+    "height_m": 4.6,
+    "x_m": 0.0,
+    "z_m": 0.0
+   },
+   "n_racks": 0
+  }
+ ],
+ "it_design_kw": 909.6,
+ "plant": {
+  "gap_east_m": 12.0,
+  "chiller_size_m": [
+   8.0,
+   3.0,
+   3.0
+  ],
+  "chiller_z_m": -6.0,
+  "tower_size_m": [
+   3.7,
+   5.0,
+   3.7
+  ],
+  "tower_z_m": -12.9,
+  "standby_units": 1,
+  "tower_positions": [
+   [
+    -11.9,
+    -12.9
+   ],
+   [
+    -7.8,
+    -12.9
+   ],
+   [
+    -3.7,
+    -12.9
+   ],
+   [
+    0.4,
+    -12.9
+   ]
+  ],
+  "cdu_positions": [
+   {
+    "floor": 2,
+    "x_m": -10.1,
+    "z_m": -4.0
+   },
+   {
+    "floor": 2,
+    "x_m": -8.3,
+    "z_m": -4.0
+   },
+   {
+    "floor": 2,
+    "x_m": -6.5,
+    "z_m": -4.0
+   },
+   {
+    "floor": 2,
+    "x_m": -4.7,
+    "z_m": -4.0
+   },
+   {
+    "floor": 2,
+    "x_m": -2.9,
+    "z_m": -4.0
+   },
+   {
+    "floor": 2,
+    "x_m": -10.1,
+    "z_m": -6.4
+   },
+   {
+    "floor": 2,
+    "x_m": -8.3,
+    "z_m": -6.4
+   },
+   {
+    "floor": 2,
+    "x_m": -6.5,
+    "z_m": -6.4
+   },
+   {
+    "floor": 2,
+    "x_m": -4.7,
+    "z_m": -6.4
+   },
+   {
+    "floor": 2,
+    "x_m": -2.9,
+    "z_m": -6.4
+   }
+  ]
+ },
+ "notes": [
+  "도면 단위: $INSUNITS=6 (m), 1 단위 = 1.0 m",
+  "층 4개 (F1, F2, F3, F4): 레이어 이름 접두어로 인식, 층고 F1 4.6 m, F2 4.6 m, F3 4.9 m, F4 4.6 m (입력값). 접두어 없는 레이어는 공통",
+  "존 4개, 내부 경계 3쌍 (슬래브 3, 내벽 0). 슬래브 U 2, 내벽 U 1.5 W/m²K (가정값, 같은 쌍이 기존 시나리오에 있으면 그 값). 1층 바닥은 단열",
+  "창 면적 = 도면상 폭 x 창 높이 1.5 m (가정). 외피 U값·흡수율·SHGC 는 기존 존(없으면 건물) 값을 방위별로 유지",
+  "냉각탑 z 위치·크기 반영 (x 는 칠러와 같은 열에 둠, 단순화)",
+  "냉각탑 4대 위치 반영 (건물 전체 보기·배관 경로, 대수 산정보다 도면 우선)",
+  "CDU F3 10대 위치 반영 (건물 전체 보기·FWS 배관)"
+ ],
+ "warnings": []
+}

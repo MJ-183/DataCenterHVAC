@@ -1,0 +1,10 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+pytest>=8
+httpx>=0.27
+python-dotenv>=1.0
+openai>=1.92   # AI 해설(선택). 키가 없으면 import 되어도 사용하지 않음
+ezdxf>=1.4      # CAD(DXF) 도면 가져오기
+openpyxl>=3.1   # IT 부하 데이터 엑셀(.xlsx) 읽기
+numpy>=1.26     # 벡터화 연성 모델·보정 (ezdxf 의존성으로도 설치됨)

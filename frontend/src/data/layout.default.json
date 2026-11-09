@@ -1,0 +1,6 @@
+{
+  "_note": "3D 표시 설정. 랙·CRAH·설비의 배치와 개수는 시나리오 cooling_layout (백엔드 기류·배관 모델 계산 좌표)에서 온다. 여기는 표시용 형상 크기와 GLB 연결만.",
+  "model": null,
+  "building_fallback": { "length_ew_m": 60, "length_ns_m": 50, "height_m": 10 },
+  "visual": { "rack_height_m": 2.2, "crah_size_m": [2.6, 2.4, 1.0] }
+}

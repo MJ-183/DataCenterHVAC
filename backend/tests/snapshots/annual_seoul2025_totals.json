@@ -1,0 +1,57 @@
+{
+ "comparison": [
+  {
+   "architecture": "air_chw",
+   "cooling_power_kwh": 2374887.0,
+   "chiller_kwh": 1135850.0,
+   "facility_kwh": 16949337.0,
+   "pue": 1.239,
+   "makeup_m3": 32101.4,
+   "wue_l_per_kwh": 2.347,
+   "free_h": 3629.0,
+   "partial_h": 1232.0,
+   "chiller_h": 3899.0,
+   "peak_cooling_kw": 1998.8
+  },
+  {
+   "architecture": "hybrid_dlc",
+   "cooling_power_kwh": 1110594.0,
+   "chiller_kwh": 364087.0,
+   "facility_kwh": 15685044.0,
+   "pue": 1.147,
+   "makeup_m3": 29564.0,
+   "wue_l_per_kwh": 2.161,
+   "free_h": 3629.0,
+   "partial_h": 5131.0,
+   "chiller_h": 0.0,
+   "peak_cooling_kw": 1935.1
+  },
+  {
+   "architecture": "immersion",
+   "cooling_power_kwh": 773452.0,
+   "chiller_kwh": 158285.0,
+   "facility_kwh": 15347902.0,
+   "pue": 1.122,
+   "makeup_m3": 28885.9,
+   "wue_l_per_kwh": 2.112,
+   "free_h": 3629.0,
+   "partial_h": 5131.0,
+   "chiller_h": 0.0,
+   "peak_cooling_kw": 1918.1
+  }
+ ],
+ "monthly_air": [
+  99849.0,
+  90281.0,
+  115024.0,
+  160931.0,
+  243380.0,
+  283264.0,
+  317539.0,
+  319433.0,
+  286058.0,
+  237004.0,
+  121325.0,
+  100799.0
+ ]
+}

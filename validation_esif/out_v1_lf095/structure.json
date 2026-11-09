@@ -1,0 +1,70 @@
+{
+ "냉각탑계(cooling_kw)": {
+  "engine_calibrated_2019": {
+   "nmbe_pct": -12.1,
+   "cv_rmse_pct": 73.9
+  },
+  "affine_2019": {
+   "nmbe_pct": -0.1,
+   "cv_rmse_pct": 72.3
+  },
+  "coef": {
+   "fixed_kw": 4.19,
+   "per_it_kw": 0.00604,
+   "per_wb_k_above0": -0.121,
+   "per_k_below0_dry": 0.023
+  },
+  "fixed_share_of_mean_cal": 0.47
+ },
+ "펌프(pump_kw)": {
+  "engine_calibrated_2019": {
+   "nmbe_pct": -10.0,
+   "cv_rmse_pct": 49.0
+  },
+  "affine_2019": {
+   "nmbe_pct": 3.3,
+   "cv_rmse_pct": 45.5
+  },
+  "coef": {
+   "fixed_kw": 2.94,
+   "per_it_kw": 0.00566,
+   "per_wb_k_above0": 0.223,
+   "per_k_below0_dry": -0.057
+  },
+  "fixed_share_of_mean_cal": 0.32
+ },
+ "공조 팬(hvac_kw)": {
+  "engine_calibrated_2019": {
+   "nmbe_pct": -18.0,
+   "cv_rmse_pct": 34.6
+  },
+  "affine_2019": {
+   "nmbe_pct": 9.8,
+   "cv_rmse_pct": 23.1
+  },
+  "coef": {
+   "fixed_kw": 6.34,
+   "per_it_kw": 0.00163,
+   "per_wb_k_above0": 0.053,
+   "per_k_below0_dry": -0.088
+  },
+  "fixed_share_of_mean_cal": 0.79
+ },
+ "기계 합계": {
+  "engine_calibrated_2019": {
+   "nmbe_pct": -15.9,
+   "cv_rmse_pct": 38.6
+  },
+  "affine_2019": {
+   "nmbe_pct": 4.1,
+   "cv_rmse_pct": 32.4
+  },
+  "coef": {
+   "fixed_kw": 13.47,
+   "per_it_kw": 0.01333,
+   "per_wb_k_above0": 0.155,
+   "per_k_below0_dry": -0.122
+  },
+  "fixed_share_of_mean_cal": 0.51
+ }
+}

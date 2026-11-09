@@ -1,0 +1,75 @@
+{
+  "_note": "샘플 시나리오. weather 값은 서울 여름날을 가정해 만든 '가상 데이터'이며 실측값이 아님. 실제 사용 시 기상청 시간별 관측자료 또는 서울 EPW 파일로 교체할 것. cooling_plant 의 냉각 방식·프리쿨링·펌프 계수(architecture 이하)도 가정값.",
+  "site": {
+    "name": "Sample DC (Seoul)",
+    "latitude": 37.57,
+    "longitude": 126.98,
+    "std_meridian": 135.0,
+    "date": "2026-07-15"
+  },
+  "weather": {
+    "dry_bulb_c": [26.5, 26.0, 25.6, 25.3, 25.1, 25.0, 25.4, 26.3, 27.5, 28.8, 30.0, 31.1, 32.0, 32.6, 33.0, 32.9, 32.4, 31.6, 30.5, 29.4, 28.5, 27.8, 27.2, 26.8],
+    "rh_pct":     [82, 84, 85, 86, 87, 87, 85, 80, 74, 68, 63, 59, 56, 54, 53, 53, 55, 58, 63, 68, 72, 75, 78, 80],
+    "ghi_w_m2":   [0, 0, 0, 0, 0, 5, 60, 190, 350, 510, 650, 760, 830, 850, 820, 740, 610, 450, 270, 110, 15, 0, 0, 0]
+  },
+  "indoor": {
+    "temp_c": 24.0,
+    "rh_pct": 50.0
+  },
+  "envelope": {
+    "walls": [
+      {"orientation": "N", "area_m2": 600, "u_value": 0.35, "absorptance": 0.7},
+      {"orientation": "E", "area_m2": 500, "u_value": 0.35, "absorptance": 0.7},
+      {"orientation": "S", "area_m2": 600, "u_value": 0.35, "absorptance": 0.7},
+      {"orientation": "W", "area_m2": 500, "u_value": 0.35, "absorptance": 0.7}
+    ],
+    "roof": {"area_m2": 3000, "u_value": 0.25, "absorptance": 0.7},
+    "windows": [
+      {"orientation": "N", "area_m2": 20, "u_value": 1.8, "shgc": 0.4},
+      {"orientation": "E", "area_m2": 10, "u_value": 1.8, "shgc": 0.4},
+      {"orientation": "S", "area_m2": 30, "u_value": 1.8, "shgc": 0.4},
+      {"orientation": "W", "area_m2": 10, "u_value": 1.8, "shgc": 0.4}
+    ]
+  },
+  "it_load": {
+    "design_kw": 2000,
+    "utilization": [0.72, 0.71, 0.70, 0.70, 0.70, 0.71, 0.73, 0.76, 0.80, 0.83, 0.85, 0.85, 0.84, 0.85, 0.85, 0.85, 0.84, 0.83, 0.81, 0.79, 0.78, 0.76, 0.75, 0.73]
+  },
+  "internal": {
+    "floor_area_m2": 3000,
+    "lighting_w_m2": 8,
+    "people": 10,
+    "people_kw_each": 0.13,
+    "ups_loss_ratio": 0.05
+  },
+  "ventilation": {
+    "outdoor_air_m3_h": 3000
+  },
+  "cooling_plant": {
+    "chw_supply_c": 12.0,
+    "chw_return_c": 18.0,
+    "cw_supply_c": 32.0,
+    "cw_return_c": 37.0,
+    "chiller_cop_rated": 6.0,
+    "design_wet_bulb_c": 27.0,
+    "cop_wb_sensitivity": 0.025,
+    "crah_fan_heat_ratio": 0.05,
+    "tower_cycles_of_concentration": 4.0,
+    "tower_drift_ratio": 0.0002,
+    "architecture": "air_chw",
+    "liquid_fraction": 0.75,
+    "immersion_capture": 0.95,
+    "tcs_supply_c": 32.0,
+    "tcs_return_c": 42.0,
+    "cdu_approach_k": 3.0,
+    "free_cooling": true,
+    "tower_approach_k": 4.0,
+    "hx_approach_k": 1.5,
+    "cop_supply_sensitivity": 0.03,
+    "cop_ref_supply_c": 12.0,
+    "chw_pump_kw_per_kw": 0.015,
+    "cw_pump_kw_per_kw": 0.012,
+    "liquid_pump_kw_per_kw": 0.02,
+    "tower_fan_kw_per_kw": 0.006
+  }
+}

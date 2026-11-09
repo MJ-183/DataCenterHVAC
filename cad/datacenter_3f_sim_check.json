@@ -1,0 +1,76 @@
+{
+  "daily_total": {
+    "cooling_kwh": 1057348.0,
+    "chiller_kwh": 72037.0,
+    "chw_m3": 47272.0,
+    "cw_m3": 194256.0,
+    "makeup_m3": 2230.9,
+    "it_kwh": 970058.0,
+    "cooling_power_kwh": 127570.0,
+    "facility_kwh": 1149440.0,
+    "pue": 1.185,
+    "wue_l_per_kwh": 2.3,
+    "free_cooling_hours": 0.0,
+    "partial_free_cooling_hours": 24.0
+  },
+  "zones": [
+    {
+      "id": "hall_1f",
+      "name": "1층 전산실 A",
+      "cooling_kwh": 346659.0
+    },
+    {
+      "id": "hall_2f",
+      "name": "2층 전산실 B",
+      "cooling_kwh": 346692.0
+    },
+    {
+      "id": "hall_3f",
+      "name": "3층 전산실 C",
+      "cooling_kwh": 346982.0
+    },
+    {
+      "id": "office_1f",
+      "name": "1층 사무·관제(NOC)",
+      "cooling_kwh": 1904.0
+    },
+    {
+      "id": "elec_1f",
+      "name": "1층 전기·UPS실",
+      "cooling_kwh": 6672.0
+    },
+    {
+      "id": "support_2f",
+      "name": "2층 전기실·CDU실",
+      "cooling_kwh": 4099.0
+    },
+    {
+      "id": "support_3f",
+      "name": "3층 전기실·CDU실",
+      "cooling_kwh": 4340.0
+    }
+  ],
+  "units": {
+    "chiller": {
+      "unit_kw": 3517.0,
+      "design_kw": 33059.6,
+      "duty": 10,
+      "standby": 1,
+      "total": 11
+    },
+    "tower": {
+      "unit_kw": 4100.0,
+      "design_kw": 49624.3,
+      "duty": 13,
+      "standby": 1,
+      "total": 14
+    },
+    "cdu": {
+      "unit_kw": 2000.0,
+      "design_kw": 32136.0,
+      "duty": 17,
+      "standby": 1,
+      "total": 18
+    }
+  }
+}
